@@ -39,7 +39,17 @@ let # source-repository-package
               else builtins.zipAttrsWith (_: last) vs
             );
 
-      in zipPackages packages;
+          zippedPackages = zipPackages packages;
+
+      in {
+        inputMap =
+          if builtins.hasAttr "inputMap" zippedPackages
+          then zippedPackages.inputMap
+          else {};
+        cabalProjectLocal = if builtins.hasAttr "cabalProjectLocal" zippedPackages
+          then zippedPackages.cabalProjectLocal
+          else "";
+      };
 
     # import-cabal-project
     # :: Path (base directory)

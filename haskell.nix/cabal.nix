@@ -2,7 +2,10 @@
 
 with pkgs.lib;
 
-let source-repository-package = package-repo:
+let # source-repository-package
+    # :: Path || { src = Path; cond = String || Null }
+    # -> { inputMap."Path" = {}; cabalProjectLocal = String }
+    source-repository-package = package-repo:
       let src = if builtins.isAttrs package-repo then package-repo.src else package-repo;
           cond = if builtins.isAttrs package-repo then package-repo.cond else null;
           input = builtins.unsafeDiscardStringContext src;
@@ -25,7 +28,10 @@ let source-repository-package = package-repo:
           '';
       };
 
-    source-repository-packages = with pkgs.lib; package-repos:
+    # source-repository-packages
+    # :: [ Path || { src = Path; cond = String || Null } ]
+    # -> { inputMap = {}; cabalProjectLocal = String }
+    source-repository-packages = package-repos:
       let packages = forEach package-repos source-repository-package;
           zipPackages = builtins.zipAttrsWith
             (k: vs:
@@ -35,7 +41,11 @@ let source-repository-package = package-repo:
 
       in zipPackages packages;
 
-    import-cabal-project = with pkgs.lib; dir: file:
+    # import-cabal-project
+    # :: Path (base directory)
+    # -> Path (project file)
+    # -> String
+    import-cabal-project = dir: file:
       let path = dir + "/${file}";
           content = ''
             -- ${path}

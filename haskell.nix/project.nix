@@ -3,12 +3,13 @@
 { mkProject ? pkgs.haskell-nix.project
 , project # mkProject (haskell-nix.project) args
 , deps ? [] # [ Path || { src = Path; cond = String || Null } ]
+, shell ? {}
 }:
 
 let cabal = import ./cabal.nix { inherit pkgs; };
 
     dps = cabal.source-repository-packages deps;
-    prj = project // {
+    proj = mkProject (project // {
       inputMap =
         if builtins.hasAttr "inputMap" project
         then project.inputMap // dps.inputMap
@@ -26,6 +27,8 @@ let cabal = import ./cabal.nix { inherit pkgs; };
         '';
 
       shell.withHaddock = if pkgs.stdenv.hostPlatform.isGhcjs then false else true;
-    };
+    });
 
-in mkProject prj
+in if !pkgs.lib.inNixShell
+then proj
+else import ./shell.nix (shell // { project = proj; })

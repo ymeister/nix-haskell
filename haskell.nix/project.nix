@@ -14,11 +14,11 @@ let cabal = import ./cabal.nix { inherit pkgs; };
         then project.inputMap // dps.inputMap
         else dps.inputMap;
       cabalProject =
-        if !(builtins.hasAttr "cabalProject" project) || builtins.isNull project.cabalProject
+        if !(builtins.hasAttr "cabalProject" project) || project.cabalProject == null
         then cabal.import-cabal-project project.src "cabal.project"
         else cabal.import-cabal-project project.cabalProject;
       cabalProjectLocal =
-        if !(builtins.hasAttr "cabalProjectLocal" project) || builtins.isNull project.cabalProjectLocal
+        if !(builtins.hasAttr "cabalProjectLocal" project) || project.cabalProjectLocal == null
         then dps.cabalProjectLocal
         else project.cabalProjectLocal + ''
 

@@ -12,7 +12,7 @@ let # source-repository-package
       in {
         inputMap."${input}" = { name = builtins.baseNameOf src; outPath = src; rev = "HEAD"; };
         cabalProjectLocal =
-          if builtins.isNull cond
+          if cond == null
           then ''
             source-repository-package
               type: git

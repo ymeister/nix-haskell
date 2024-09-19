@@ -26,8 +26,14 @@ let cabal = import ./cabal.nix { inherit pkgs; };
           ${dps.cabalProjectLocal}
         '';
 
-      shell.withHaddock = if pkgs.stdenv.hostPlatform.isGhcjs then false else true;
+      shell =
+        if !(builtins.hasAttr "shell" project) || project.shell == null
+        then projShell
+        else project.shell // projShell;
     });
+    projShell = {
+      withHaddock = if pkgs.stdenv.hostPlatform.isGhcjs then false else true;
+    };
 
 in if !pkgs.lib.inNixShell
 then proj

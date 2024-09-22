@@ -37,4 +37,4 @@ let cabal = import ./cabal.nix { inherit pkgs; };
 
 in if !pkgs.lib.inNixShell
 then proj
-else import ./shell.nix (shell // { project = proj; })
+else (import ./shell.nix (shell // { project = proj; })) // { shellFor = proj.shellFor; }

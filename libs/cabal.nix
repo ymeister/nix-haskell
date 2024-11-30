@@ -3,16 +3,16 @@
 with pkgs.lib;
 
 let # source-repository-package
-    # :: Path || { src = Path; cond = String || Null }
-    # -> { inputMap."Path" = {}; cabalProjectLocal = String }
+    # :: Path || { src :: Path; condition :: String || Null }
+    # -> { inputMap."Path" :: AttrSet; cabalProject :: String }
     source-repository-package = package-repo:
       let src = if builtins.isAttrs package-repo then package-repo.src else package-repo;
-          cond = if builtins.isAttrs package-repo then package-repo.cond else null;
+          condition = if builtins.isAttrs package-repo then package-repo.condition else null;
           input = builtins.unsafeDiscardStringContext src;
       in {
         inputMap."${input}" = { name = builtins.baseNameOf src; outPath = src; rev = "HEAD"; };
-        cabalProjectLocal =
-          if cond == null
+        cabalProject =
+          if condition == null
           then ''
             source-repository-package
               type: git
@@ -20,7 +20,7 @@ let # source-repository-package
               tag: HEAD
           ''
           else ''
-            if ${cond}
+            if ${condition}
               source-repository-package
                 type: git
                 location: ${input}
@@ -29,13 +29,13 @@ let # source-repository-package
       };
 
     # source-repository-packages
-    # :: [ Path || { src = Path; cond = String || Null } ]
-    # -> { inputMap = {}; cabalProjectLocal = String }
+    # :: [ Path || { src :: Path; condition :: String || Null } ]
+    # -> { inputMap :: AttrSet; cabalProject :: String }
     source-repository-packages = package-repos:
       let packages = forEach package-repos source-repository-package;
           zipPackages = builtins.zipAttrsWith
             (k: vs:
-              if k == "cabalProjectLocal" then concatStringsSep "\n" vs
+              if k == "cabalProject" then vs
               else builtins.zipAttrsWith (_: last) vs
             );
 
@@ -46,8 +46,8 @@ let # source-repository-package
           if builtins.hasAttr "inputMap" zippedPackages
           then zippedPackages.inputMap
           else {};
-        cabalProjectLocal = if builtins.hasAttr "cabalProjectLocal" zippedPackages
-          then zippedPackages.cabalProjectLocal
+        cabalProject = if builtins.hasAttr "cabalProject" zippedPackages
+          then zippedPackages.cabalProject
           else "";
       };
 

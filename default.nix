@@ -1,37 +1,41 @@
-{ pkgs ? null
-, crossPlatform ? null
+{ pkgs ? import <nixpkgs> {} }:
 
-# haskell.nix
-, haskellNix ? null # Path || Null
-, haskellNix-nixpkgs ? "nixpkgs-unstable"
-}:
+module:
 
-assert (pkgs == null) -> (haskellNix != null);
+let eval = pkgs.lib.evalModules {
+      modules = [
+        {
+          _module.args.pkgs = pkgs;
+        }
 
-if pkgs != null then
-(
-  let pkgs' = if crossPlatform == null then pkgs else pkgs.pkgsCross.${crossPlatform};
-  in if builtins.hasAttr "haskell-nix" pkgs
-    then import ./haskell.nix { pkgs = pkgs'; }
-    else pkgs.haskell.lib
-)
+        ./modules
 
-else if haskellNix != null then
-(
-  let haskellNix' = import haskellNix {};
+        module
+      ];
+    };
 
-      # Import nixpkgs and pass the haskell.nix provided nixpkgsArgs
-      pkgs'' = import
-        # haskell.nix provides access to the nixpkgs pins which are used by our CI,
-        # hence you will be more likely to get cache hits when using these.
-        # But you can also just use your own, e.g. '<nixpkgs>'.
-        haskellNix'.sources.${haskellNix-nixpkgs}
-        # These arguments passed to nixpkgs, include some patches and also
-        # the haskell.nix functionality itself as an overlay.
-        haskellNix'.nixpkgsArgs;
-      pkgs' = if crossPlatform == null then pkgs'' else pkgs''.pkgsCross.${crossPlatform};
+    optionsDoc = pkgs.nixosOptionsDoc {
+      inherit (eval) options;
+      warningsAreErrors = false;
+    };
+    optionsDocMD = pkgs.runCommand "options-doc.md" {} ''
+      cat ${optionsDoc.optionsCommonMark} >> $out
+    '';
+    optionsDocMan = pkgs.runCommand "options-doc.man" {} ''
+      ${pkgs.pandoc}/bin/pandoc --standalone --to man ${optionsDocMD} -o $out
+    '';
+    manDocs = pkgs.writeScript "options.man" ''
+      ${pkgs.man}/bin/man ${optionsDocMan}
+    '';
 
-  in (import ./haskell.nix { pkgs = pkgs'; }) // { pkgs = pkgs'; }
-)
-
-else {}
+in rec {
+  project = {
+    config = eval.config;
+    haskell-nix =
+      let proj = eval.config.haskell-nix.haskell-nix.project eval.config.haskell-nix.project;
+      in if !pkgs.lib.inNixShell
+        then proj
+        else proj.shell;
+  };
+  manual = manDocs;
+}

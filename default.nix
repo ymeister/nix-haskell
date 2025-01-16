@@ -30,6 +30,7 @@ let eval = pkgs.lib.evalModules {
 
 in rec {
   inherit manual;
+  manualMarkdown = optionsDocMD;
 
   project = {
     config = eval.config;

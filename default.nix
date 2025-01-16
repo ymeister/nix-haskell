@@ -24,11 +24,13 @@ let eval = pkgs.lib.evalModules {
     optionsDocMan = pkgs.runCommand "options-doc.man" {} ''
       ${pkgs.pandoc}/bin/pandoc --standalone --to man ${optionsDocMD} -o $out
     '';
-    manDocs = pkgs.writeScript "options.man" ''
+    manual = pkgs.writeShellScriptBin "manual" ''
       ${pkgs.man}/bin/man ${optionsDocMan}
     '';
 
 in rec {
+  inherit manual;
+
   project = {
     config = eval.config;
     haskell-nix =
@@ -37,5 +39,4 @@ in rec {
         then proj
         else proj.shell;
   };
-  manual = manDocs;
 }

@@ -66,12 +66,12 @@ in nix-haskell {
   };
 
   haskell-nix.project = {
-    # haskell.nix specific options
+    # haskell.nix specific overrides
   };
 
   # TODO
   #reflex-platform.project = {
-  #  # reflex-platform specific options
+  #  # reflex-platform specific overrides
   #};
 
 ```

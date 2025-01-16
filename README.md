@@ -65,6 +65,15 @@ in nix-haskell {
     packages = ps: concatMap (p: optional (builtins.hasAttr p ps) ps."${p}") [ "common" "frontend" "backend" ];
   };
 
+  haskell-nix.project = {
+    # haskell.nix specific options
+  };
+
+  # TODO
+  #reflex-platform.project = {
+  #  # reflex-platform specific options
+  #};
+
 ```
 
 

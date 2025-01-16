@@ -86,21 +86,26 @@ with lib;
         types.submodule {
           imports = [
             ({...}@project_args:
-              let modules = [
+              let options_modules = [
                     (config.thunks."haskell-nix" + "/modules/cabal.nix")
                     (config.thunks."haskell-nix" + "/modules/component-options.nix")
                     (config.thunks."haskell-nix" + "/modules/hackage.nix")
                     (config.thunks."haskell-nix" + "/modules/package-options.nix")
                     (config.thunks."haskell-nix" + "/modules/plan.nix")
                   ];
+                  #configs_modules = [
+                  #  (config.thunks."haskell-nix" + "/modules/configuration-nix.nix")
+                  #];
                   module_args = project_args // {
                     pkgs = import (config.thunks."haskell-nix" + "/lib/system-pkgs.nix") config."haskell-nix".nixpkgs;
                     pkgconfPkgs = import (config.thunks."haskell-nix" + "/lib/pkgconf-nixpkgs-map.nix") config."haskell-nix".nixpkgs;
                     haskellLib = config."haskell-nix".lib;
                   };
-                  options = zipAttrsWith (name: vals: last vals) (map (module: (import module module_args).options) modules);
+                  options = zipAttrsWith (name: vals: last vals) (map (module: (import module module_args).options) options_modules);
+                  #configs = zipAttrsWith (name: vals: last vals) (map (module: (import module module_args).config) configs_modules);
               in {
                 inherit options;
+                #config = configs;
               }
             )
           ];
@@ -304,7 +309,16 @@ with lib;
 
       withHaddock = !pkgs.stdenv.hostPlatform.isGhcjs;
 
+      buildInputs = with pkgs; [ nodejs-slim ];
+
     };
+
+    extraCabalProject = [
+      ''
+        if arch(javascript)
+          extra-packages: ghci
+      ''
+    ];
 
   };
 

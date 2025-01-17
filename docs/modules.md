@@ -17188,7 +17188,8 @@ unspecified value
 
 
 
-This option has no description\.
+Package selection function\. It takes a list of Haskell packages and returns a subset of these packages with all of their dependencies included in ` ghc-pkg list `\.
+It can take either a ` package ` or name (` string `) of a package which availability can depend on the platform\.
 
 
 
@@ -17199,6 +17200,18 @@ unspecified value
 
 *Default:*
 ` <function> `
+
+
+
+*Example:*
+
+````
+ps: with ps; [
+  common
+  frontend
+  "backend" # Provided by name so that it is only included when it's among `ps`
+]
+````
 
 *Declared by:*
  - [modules/common\.nix](file://modules/common.nix)

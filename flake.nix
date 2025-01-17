@@ -11,6 +11,7 @@
         lib.manual = module: (project module).manual;
 
         packages.manual = (project { src = ./.; }).manual;
+        packages.manualMarkdown = (project { src = ./.; }).manualMarkdown;
       }
     );
 }

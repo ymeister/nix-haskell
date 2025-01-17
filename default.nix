@@ -40,10 +40,9 @@ in rec {
                 else proj.shell;
           in projOrShell // {
             inherit config;
+            override = y: project (recursiveUpdate x y);
           };
-    in (project module) // {
-      override = x: project (recursiveUpdate module x);
-    };
+    in project module;
 
   inherit manual;
   manualMarkdown = optionsDocMD;

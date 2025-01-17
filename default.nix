@@ -1,8 +1,10 @@
 { pkgs ? import <nixpkgs> {} }:
 
+with pkgs.lib;
+
 module:
 
-let eval = pkgs.lib.evalModules {
+let eval = x: pkgs.lib.evalModules {
       modules = [
         {
           _module.args.pkgs = pkgs;
@@ -10,12 +12,12 @@ let eval = pkgs.lib.evalModules {
 
         ./modules
 
-        module
+        x
       ];
     };
 
     optionsDoc = pkgs.nixosOptionsDoc {
-      inherit (eval) options;
+      inherit (eval module) options;
       warningsAreErrors = false;
     };
     optionsDocMD = pkgs.runCommand "options-doc.md" {} ''
@@ -29,13 +31,19 @@ let eval = pkgs.lib.evalModules {
     '';
 
 in rec {
-  config = eval.config;
-
   haskell-nix =
-    let proj = eval.config.haskell-nix.haskell-nix.project eval.config.haskell-nix.project;
-    in if !pkgs.lib.inNixShell
-      then proj
-      else proj.shell;
+    let project = x:
+          let config = (eval x).config;
+              proj = config.haskell-nix.haskell-nix.project config.haskell-nix.project;
+              projOrShell = if !pkgs.lib.inNixShell
+                then proj
+                else proj.shell;
+          in projOrShell // {
+            inherit config;
+          };
+    in (project module) // {
+      override = x: project (recursiveUpdate module x);
+    };
 
   inherit manual;
   manualMarkdown = optionsDocMD;

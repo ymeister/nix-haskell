@@ -7,7 +7,7 @@
           project = import ./default.nix { inherit pkgs; };
       in {
         lib.nix-haskell = project;
-        lib.project = module: (project module).project;
+        lib.haskell-nix = module: (project module).haskell-nix;
         lib.manual = module: (project module).manual;
 
         packages.manual = (project { src = ./.; }).manual;

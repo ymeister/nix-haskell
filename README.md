@@ -62,7 +62,7 @@ in nix-haskell {
 
   shell = {
     crossPlatforms = ps: with ps; [ ghcjs ];
-    packages = ps: concatMap (p: optional (builtins.hasAttr p ps) ps."${p}") [ "common" "frontend" "backend" ];
+    packages = ps: with ps; [ common frontend "backend" ];
   };
 
   haskell-nix.project = {

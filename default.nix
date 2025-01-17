@@ -29,15 +29,14 @@ let eval = pkgs.lib.evalModules {
     '';
 
 in rec {
+  config = eval.config;
+
+  haskell-nix =
+    let proj = eval.config.haskell-nix.haskell-nix.project eval.config.haskell-nix.project;
+    in if !pkgs.lib.inNixShell
+      then proj
+      else proj.shell;
+
   inherit manual;
   manualMarkdown = optionsDocMD;
-
-  project = {
-    config = eval.config;
-    haskell-nix =
-      let proj = eval.config.haskell-nix.haskell-nix.project eval.config.haskell-nix.project;
-      in if !pkgs.lib.inNixShell
-        then proj
-        else proj.shell;
-  };
 }

@@ -6,8 +6,8 @@ let # source-repository-package
     # :: Path || { src :: Path; condition :: String || Null }
     # -> { inputMap."Path" :: AttrSet; cabalProject :: String }
     source-repository-package = package-repo:
-      let src = if builtins.isAttrs package-repo then package-repo.src else package-repo;
-          condition = if builtins.isAttrs package-repo then package-repo.condition else null;
+      let src = if builtins.isAttrs package-repo && builtins.hasAttr "src" package-repo then package-repo.src else package-repo;
+          condition = if builtins.isAttrs package-repo && builtins.hasAttr "condition" package-repo then package-repo.condition else null;
           input = builtins.unsafeDiscardStringContext src;
       in {
         inputMap."${input}" = { name = builtins.baseNameOf src; outPath = src; rev = "HEAD"; };

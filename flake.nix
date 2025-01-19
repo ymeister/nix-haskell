@@ -1,10 +1,9 @@
 {
   inputs.flake-utils.url = "github:numtide/flake-utils";
 
-  outputs = { self, nixpkgs, flake-utils, ... }:
+  outputs = { self, flake-utils, ... }:
     flake-utils.lib.eachDefaultSystem (system:
-      let pkgs = nixpkgs.legacyPackages.${system};
-          project = import ./default.nix { inherit pkgs; };
+      let project = import ./default.nix { inherit system; };
       in {
         lib.nix-haskell = project;
         lib.haskell-nix = module: (project module).haskell-nix;

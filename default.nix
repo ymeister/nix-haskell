@@ -1,4 +1,6 @@
-{ pkgs ? import ./pins/nixpkgs {} }:
+{ system ? builtins.currentSystem
+, pkgs ? import ./pins/nixpkgs { inherit system; }
+}:
 
 with pkgs.lib;
 
@@ -8,7 +10,12 @@ let eval = x: pkgs.lib.evalModules {
       modules = [
         ./modules
 
+        {
+          config.system = mkDefault system;
+          config.importing.nixpkgs = mkDefault pkgs;
+        }
         ({ config, ... }: {
+          _module.args.system = config.system;
           _module.args.pkgs = config.importing.nixpkgs;
         })
 
@@ -31,6 +38,8 @@ let eval = x: pkgs.lib.evalModules {
     '';
 
 in rec {
+  nixpkgs = (eval module).config.importing.nixpkgs;
+
   haskell-nix =
     let project = x:
           let config = (eval x).config;

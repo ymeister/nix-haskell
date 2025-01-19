@@ -4,16 +4,13 @@
 ### Example
 
 ```
-{ pkgs ? import <nixpkgs> {} }:
+let nix-haskell = import ./deps/nix-haskell {};
+    pkgs = nix-haskell.nixpkgs;
 
-with pkgs.lib;
-
-let nix-thunk = import ./deps/nix-thunk {};
+    nix-thunk = import ./deps/nix-thunk {};
     deps = with nix-thunk; mapSubdirectories thunkSource ./deps;
 
-    nix-haskell = import ./deps/nix-haskell { inherit pkgs; };
-
-in nix-haskell {
+in with pkgs.lib; nix-haskell {
   src = ./.;
   compiler-nix-name = "ghc910";
 

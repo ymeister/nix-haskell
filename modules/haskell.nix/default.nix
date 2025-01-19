@@ -1,4 +1,4 @@
-{ config, lib, ... }:
+{ config, lib, system, ... }:
 
 with lib;
 
@@ -30,10 +30,10 @@ with lib;
 
       nixpkgs = mkOption {
         type = types.raw;
-        default = import config."haskell-nix".nixpkgsSource config."haskell-nix".nixpkgsArgs;
+        default = import config."haskell-nix".nixpkgsSource ({ inherit system; } // config."haskell-nix".nixpkgsArgs);
         defaultText = literalMD ''
           ```
-          import config."haskell-nix".nixpkgsSource config."haskell-nix".nixpkgsArgs
+          import config."haskell-nix".nixpkgsSource ({ inherit system; } // config."haskell-nix".nixpkgsArgs)
           ```
         '';
       };

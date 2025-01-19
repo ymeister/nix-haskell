@@ -1,4 +1,4 @@
-{ config, lib, ... }:
+{ config, lib, system, ... }:
 
 with lib;
 
@@ -10,30 +10,30 @@ with lib;
 
       "nixpkgs" = mkOption {
         type = types.raw;
-        default = import config.thunks."nixpkgs" {};
+        default = import config.thunks."nixpkgs" { inherit system; };
         defaultText = literalMD ''
           ```
-          import config.thunks."nixpkgs" {}
+          import config.thunks."nixpkgs" { inherit system; }
           ```
         '';
       };
 
       "haskell-nix" = mkOption {
         type = types.raw;
-        default = import config.thunks."haskell-nix" {};
+        default = import config.thunks."haskell-nix" { inherit system; };
         defaultText = literalMD ''
           ```
-          import config.thunks."haskell-nix" {}
+          import config.thunks."haskell-nix" { inherit system; }
           ```
         '';
       };
 
       "reflex-platform" = mkOption {
         type = types.raw;
-        default = import config.thunks."reflex-platform" {};
+        default = import config.thunks."reflex-platform" { inherit system; };
         defaultText = literalMD ''
           ```
-          import config.thunks."reflex-platform" {}
+          import config.thunks."reflex-platform" { inherit system; }
           ```
         '';
       };

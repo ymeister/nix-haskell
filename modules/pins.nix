@@ -6,6 +6,14 @@ with lib;
 
   options = {
 
+    system = mkOption {
+      type = types.string;
+      default = builtins.currentSystem;
+      defaultText = ''
+        builtins.currentSystem
+      '';
+    };
+
     pins = {
 
       "nixpkgs" = mkOption {

@@ -107,7 +107,7 @@ with lib;
 
     haskell-nix.project = {
       src = mkForce config.src-driver;
-      hsPkgs = null;
+      hsPkgs = mkDefault null;
     };
 
   };

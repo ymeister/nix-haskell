@@ -323,12 +323,12 @@ with lib;
     shell = {
 
       tools = {
-        cabal = "latest";
+        cabal = mkDefault "latest";
       };
 
-      withHaddock = !pkgs.stdenv.hostPlatform.isGhcjs;
+      withHaddock = mkDefault (!pkgs.stdenv.hostPlatform.isGhcjs);
 
-      buildInputs = with pkgs; [ nodejs-slim ];
+      buildInputs = mkDefault (with pkgs; [ nodejs-slim ]);
 
     };
 

@@ -7,7 +7,7 @@ with lib;
   options = {
 
     system = mkOption {
-      type = types.string;
+      type = types.str;
       default = builtins.currentSystem;
       defaultText = ''
         builtins.currentSystem

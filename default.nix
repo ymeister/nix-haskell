@@ -1,4 +1,4 @@
-{ pkgs ? import <nixpkgs> {} }:
+{ pkgs ? import ./pins/nixpkgs {} }:
 
 with pkgs.lib;
 
@@ -6,11 +6,11 @@ module:
 
 let eval = x: pkgs.lib.evalModules {
       modules = [
-        {
-          _module.args.pkgs = pkgs;
-        }
-
         ./modules
+
+        ({ config, ... }: {
+          _module.args.pkgs = config.importing.nixpkgs;
+        })
 
         x
       ];

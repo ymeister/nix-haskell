@@ -8,9 +8,9 @@ with lib;
 
     pins = {
 
-      "nix-thunk" = mkOption {
+      "nixpkgs" = mkOption {
         type = types.path;
-        default = ../deps/nix-thunk;
+        default = ../pins/nixpkgs;
       };
 
       "haskell-nix" = mkOption {
@@ -21,6 +21,11 @@ with lib;
       "reflex-platform" = mkOption {
         type = types.path;
         default = ../pins/reflex-platform;
+      };
+
+      "nix-thunk" = mkOption {
+        type = types.path;
+        default = ../deps/nix-thunk;
       };
 
     };

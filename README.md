@@ -73,7 +73,6 @@ in nix-haskell {
   #reflex-platform.project = {
   #  # reflex-platform specific overrides
   #};
-
 ```
 
 

@@ -8,12 +8,12 @@ with lib;
 
     importing = {
 
-      "nix-thunk" = mkOption {
+      "nixpkgs" = mkOption {
         type = types.raw;
-        default = import config.thunks."nix-thunk" {};
+        default = import config.thunks."nixpkgs" {};
         defaultText = literalMD ''
           ```
-          import config.thunks."nix-thunk" {}
+          import config.thunks."nixpkgs" {}
           ```
         '';
       };
@@ -34,6 +34,16 @@ with lib;
         defaultText = literalMD ''
           ```
           import config.thunks."reflex-platform" {}
+          ```
+        '';
+      };
+
+      "nix-thunk" = mkOption {
+        type = types.raw;
+        default = import config.thunks."nix-thunk" {};
+        defaultText = literalMD ''
+          ```
+          import config.thunks."nix-thunk" {}
           ```
         '';
       };

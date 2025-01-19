@@ -230,7 +230,7 @@ with lib;
 
     source-repository-packages-driver = mkOption {
       type = types.attrs;
-      default = (import ../libs/cabal.nix { inherit pkgs; }).source-repository-packages config.source-repository-packages;
+      default = (import ../libs/cabal.nix { inherit pkgs; }).source-repository-packages (attrValues config.source-repository-packages);
       defaultText = literalMD ''
       ```
       (import ../libs/cabal.nix { inherit pkgs; }).source-repository-packages config.source-repository-packages;
@@ -240,28 +240,21 @@ with lib;
     };
 
     source-repository-packages = mkOption {
-      type = types.nullOr (types.listOf (types.either types.path types.attrs));
-      default = null;
+      type = types.attrsOf (types.either types.path types.attrs);
+      default = {};
       example = literalMD ''
         ```
-        [
-          (deps.obelisk + "/lib/executable-config/inject")
-          (deps.obelisk + "/lib/executable-config/lookup")
-          (deps.obelisk + "/lib/frontend")
-          (deps.obelisk + "/lib/route")
-          (deps.obelisk + "/lib/tabulation")
-          { src = deps.obelisk + "/lib/asset/manifest"; condition = "!arch(javascript)"; }
-          { src = deps.obelisk + "/lib/asset/serve-snap"; condition = "!arch(javascript)"; }
-          { src = deps.obelisk + "/lib/backend"; condition = "!arch(javascript)"; }
-          { src = deps.obelisk + "/lib/command"; condition = "!arch(javascript)"; }
-          { src = deps.obelisk + "/lib/run"; condition = "!arch(javascript)"; }
-          { src = deps.obelisk + "/lib/selftest"; condition = "!arch(javascript)"; }
-          { src = deps.obelisk + "/lib/snap-extras"; condition = "!arch(javascript)"; }
+        {
+          obelisk-frontend = deps.obelisk + "/lib/frontend";
+          obelisk-backend = {
+            src = deps.obelisk + "/lib/backend";
+            condition = "!arch(javascript)";
+          };
 
-          (deps.reflex-dom + "/reflex-dom")
-          (deps.reflex-dom + "/reflex-dom-core")
-          deps.reflex
-        ]
+          reflex-dom = deps.reflex-dom + "/reflex-dom";
+          reflex-dom-core = deps.reflex-dom + "/reflex-dom-core";
+          reflex = deps.reflex;
+        }
         ```
       '';
     };

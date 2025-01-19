@@ -70,6 +70,7 @@ in with pkgs.lib; nix-haskell {
   #reflex-platform.project = {
   #  # reflex-platform specific overrides
   #};
+}
 ```
 
 

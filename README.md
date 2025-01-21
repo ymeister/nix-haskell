@@ -15,24 +15,16 @@ in with pkgs.lib; nix-haskell {
   compiler-nix-name = "ghc910";
 
   source-repository-packages = [
-    (deps.obelisk + "/lib/executable-config/inject")
-    (deps.obelisk + "/lib/executable-config/lookup")
-    (deps.obelisk + "/lib/frontend")
-    (deps.obelisk + "/lib/route")
-    (deps.obelisk + "/lib/tabulation")
-    { src = deps.obelisk + "/lib/asset/manifest"; condition = "!arch(javascript)"; }
-    { src = deps.obelisk + "/lib/asset/serve-snap"; condition = "!arch(javascript)"; }
-    { src = deps.obelisk + "/lib/backend"; condition = "!arch(javascript)"; }
-    { src = deps.obelisk + "/lib/command"; condition = "!arch(javascript)"; }
-    { src = deps.obelisk + "/lib/run"; condition = "!arch(javascript)"; }
-    { src = deps.obelisk + "/lib/selftest"; condition = "!arch(javascript)"; }
-    { src = deps.obelisk + "/lib/snap-extras"; condition = "!arch(javascript)"; }
-    { src = deps.reflex-fsnotify; condition = "!arch(javascript)"; }
+    obelisk-frontend = deps.obelisk + "/lib/frontend";
+    obelisk-backend = {
+      src = deps.obelisk + "lib/backend";
+      condition = "!arch(javascript);"
+    };
 
-    (deps.reflex-dom + "/reflex-dom")
-    (deps.reflex-dom + "/reflex-dom-core")
-    deps.reflex
-    deps.patch
+    reflex-dom = deps.reflex-dom + "/reflex-dom";
+    reflex-dom-core = deps.reflex-dom + "/reflex-dom-core";
+    reflex = deps.reflex;
+    patch = deps.patch;
   ];
 
   extraCabalProject = [

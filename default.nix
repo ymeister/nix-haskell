@@ -15,8 +15,8 @@ let eval = x: pkgs.lib.evalModules {
           config.importing.nixpkgs = mkDefault pkgs;
         }
         ({ config, ... }: {
-          _module.args.system = config.system;
-          _module.args.pkgs = config.importing.nixpkgs;
+          _module.args.system = mkDefault config.system;
+          _module.args.pkgs = mkDefault config.importing.nixpkgs;
         })
 
         x

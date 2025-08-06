@@ -14,7 +14,7 @@ in with pkgs.lib; nix-haskell {
   src = ./.;
   compiler-nix-name = "ghc910";
 
-  source-repository-packages = [
+  source-repository-packages = {
     obelisk-frontend = deps.obelisk + "/lib/frontend";
     obelisk-backend = {
       src = deps.obelisk + "lib/backend";
@@ -25,7 +25,7 @@ in with pkgs.lib; nix-haskell {
     reflex-dom-core = deps.reflex-dom + "/reflex-dom-core";
     reflex = deps.reflex;
     patch = deps.patch;
-  ];
+  };
 
   extraCabalProject = [
     (builtins.readFile (deps.obelisk + "/lib/cabal.dependencies.project"))

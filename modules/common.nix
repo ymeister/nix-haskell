@@ -209,8 +209,11 @@ with lib;
         inherit pkgs;
         src = config.src;
         extraCabalProject =
-             config.extraCabalProject or []
-          ++ config.source-repository-packages-driver.cabalProject or [];
+          ( if config.source-repository-packages-driver.cabalProject != null && config.source-repository-packages-driver.cabalProject != ""
+            then config.source-repository-packages-driver.cabalProject
+            else []
+          )
+          ++ config.extraCabalProject or [];
       };
       defaultText = literalMD ''
       ```
@@ -218,8 +221,8 @@ with lib;
           inherit pkgs;
           src = config.src;
           extraCabalProject =
-               config.extraCabalProject or []
-            ++ source-repository-packages-driver.cabalProject or [];
+               [config.source-repository-packages-driver.cabalProject]
+            ++ config.extraCabalProject or [];
         };
       ```
       '';

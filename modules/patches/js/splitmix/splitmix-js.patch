@@ -1,0 +1,50 @@
+diff --git a/splitmix.cabal b/splitmix.cabal
+index f64a8f0..0c4dfce 100644
+--- a/splitmix.cabal
++++ b/splitmix.cabal
+@@ -84,7 +84,7 @@ library
+   -- because it's valuable that splitmix and QuickCheck doesn't
+   -- depend on about anything
+ 
+-  if impl(ghcjs)
++  if impl(ghcjs) || arch(javascript)
+     cpp-options: -DSPLITMIX_INIT_GHCJS=1
+ 
+   else
+diff --git a/src/System/Random/SplitMix/Init.hs b/src/System/Random/SplitMix/Init.hs
+index 59a97d2..0e4cbbc 100644
+--- a/src/System/Random/SplitMix/Init.hs
++++ b/src/System/Random/SplitMix/Init.hs
+@@ -6,7 +6,7 @@ module System.Random.SplitMix.Init (
+ 
+ import Data.Word (Word64)
+ 
+-#if defined(SPLITMIX_INIT_GHCJS) && __GHCJS__
++#if defined(SPLITMIX_INIT_GHCJS) && (__GHCJS__ || defined(javascript_HOST_ARCH))
+ 
+ import Data.Word (Word32)
+ 
+@@ -26,12 +26,17 @@ import System.CPUTime (cpuTimePrecision, getCPUTime)
+ 
+ initialSeed :: IO Word64
+ 
+-#if defined(SPLITMIX_INIT_GHCJS) && __GHCJS__
++#if defined(SPLITMIX_INIT_GHCJS) && (__GHCJS__ || defined(javascript_HOST_ARCH))
+ 
+ initialSeed = fmap fromIntegral initialSeedJS
+ 
+ foreign import javascript
++#if __GHCJS__
+     "$r = Math.floor(Math.random()*0x100000000);"
++#else
++    -- defined(javascript_HOST_ARCH)
++    "(() => { return Math.floor(Math.random()*0x100000000); })"
++#endif
+     initialSeedJS :: IO Word32
+ 
+ #else
+@@ -56,3 +61,4 @@ initialSeed =  do
+ 
+ #endif
+ #endif
++

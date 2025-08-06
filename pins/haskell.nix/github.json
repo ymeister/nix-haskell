@@ -1,8 +1,8 @@
 {
   "owner": "obsidiansystems",
   "repo": "haskell.nix",
-  "branch": "ym@js-template-haskell",
+  "branch": "nix-haskell",
   "private": false,
-  "rev": "d8e91daf158324764ec7ccb578bcd54ed509435c",
-  "sha256": "06fr4baf1l21lr9qwhca3f0xgx7dn5v6m0jwbq7w03yyrp2vw4fj"
+  "rev": "91ee47677307c75ba334ffd1dd5e6cd3cb6cd1ba",
+  "sha256": "0sr59xibg1sc68iqvp4s54mbxd6zy0hlbazwfd2fvy3snpw31srj"
 }

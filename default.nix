@@ -21,6 +21,11 @@ let eval = x: pkgs.lib.evalModules {
 
         x
       ];
+
+      specialArgs = {
+        nix-haskell-modules = ./modules;
+        nix-haskell-patches = ./modules/patches;
+      };
     };
 
     optionsDoc = pkgs.nixosOptionsDoc {

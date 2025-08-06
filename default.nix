@@ -49,7 +49,7 @@ in rec {
                 else proj.shell;
           in projOrShell // {
             inherit config;
-            override = y: project (recursiveUpdate x y);
+            override = y: project (inputs: recursiveUpdate (x inputs) (y inputs));
           };
     in project module;
 

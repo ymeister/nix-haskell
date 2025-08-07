@@ -328,6 +328,12 @@ with lib;
 
     };
 
+    overrides = [
+      ({ config, ... }: {
+        configureFlags = [ "--package-db ${config.ghc.package.outPath}/${config.ghc.package.libDir}/package.conf.d" ];
+      })
+    ];
+
     extraCabalProject = [
       ''
         if arch(javascript)

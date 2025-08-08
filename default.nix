@@ -45,18 +45,22 @@ let eval = x: pkgs.lib.evalModules {
 in rec {
   nixpkgs = (eval module).config.importing.nixpkgs;
 
-  haskell-nix =
-    let project = x:
-          let config = (eval x).config;
-              proj = config.haskell-nix.haskell-nix.project config.haskell-nix.project;
-              projOrShell = if !pkgs.lib.inNixShell
-                then proj
-                else proj.shell;
-          in projOrShell // {
-            inherit config;
-            override = y: project (inputs: recursiveUpdate (x inputs) (y inputs));
-          };
-    in project module;
+  project = {
+
+    haskell-nix =
+      let haskellNix-project = x:
+            let config = (eval x).config;
+                proj = config.haskell-nix.haskell-nix.project config.haskell-nix.project;
+                projOrShell = if !pkgs.lib.inNixShell
+                  then proj
+                  else proj.shell;
+            in projOrShell // {
+              inherit config;
+              override = y: haskellNix-project (inputs: recursiveUpdate (x inputs) (y inputs));
+            };
+      in haskellNix-project module;
+
+  };
 
   inherit manual;
   manualMarkdown = optionsDocMD;

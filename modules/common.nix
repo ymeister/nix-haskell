@@ -322,24 +322,7 @@ with lib;
         cabal = mkDefault "latest";
       };
 
-      withHaddock = mkDefault (!pkgs.stdenv.hostPlatform.isGhcjs);
-
-      buildInputs = mkDefault (with pkgs; [ nodejs-slim ]);
-
     };
-
-    overrides = [
-      ({ config, ... }: {
-        configureFlags = [ "--package-db ${config.ghc.package.outPath}/${config.ghc.package.libDir}/package.conf.d" ];
-      })
-    ];
-
-    extraCabalProject = [
-      ''
-        if arch(javascript)
-          extra-packages: ghci
-      ''
-    ];
 
   };
 

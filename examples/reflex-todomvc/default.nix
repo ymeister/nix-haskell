@@ -1,3 +1,3 @@
 let nix-haskell = import ../../default.nix {};
     project = import ./project.nix;
-in nix-haskell project
+in (nix-haskell project).haskell-nix.project

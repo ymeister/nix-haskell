@@ -1,1 +1,7 @@
 packages: .
+
+allow-newer: *:*
+
+if !arch(wasm32)
+  package reflex-dom
+    flags: +use-warp -webkit2gtk

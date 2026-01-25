@@ -1,3 +1,0 @@
-[submodule "examples/reflex-todomvc"]
-	path = examples/reflex-todomvc
-	url = https://github.com/reflex-frp/reflex-todomvc.git

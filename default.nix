@@ -42,13 +42,8 @@ let eval = x: pkgs.lib.evalModules {
       ${pkgs.man}/bin/man ${optionsDocMan}
     '';
 
-in rec {
-  nixpkgs = (eval module).config.importing.nixpkgs;
-
-  project = {
-
     haskell-nix =
-      let haskellNix-project = x:
+      let mkProject = x:
             let config = (eval x).config;
                 proj = config.haskell-nix.haskell-nix.project config.haskell-nix.project;
                 projOrShell = if !pkgs.lib.inNixShell
@@ -56,10 +51,20 @@ in rec {
                   else proj.shell;
             in projOrShell // {
               inherit config;
-              override = y: haskellNix-project (inputs: recursiveUpdate (x inputs) (y inputs));
+              override = y: mkProject (inputs: recursiveUpdate (x inputs) (y inputs));
             };
-      in haskellNix-project module;
+      in {
+        project = mkProject module;
+      };
 
+
+in rec {
+  nixpkgs = (eval module).config.importing.nixpkgs;
+
+  inherit haskell-nix;
+
+  project = {
+    haskell-nix = haskell-nix.project;
   };
 
   inherit manual;

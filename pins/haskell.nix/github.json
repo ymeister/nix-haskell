@@ -1,8 +1,7 @@
 {
-  "owner": "obsidiansystems",
+  "owner": "input-output-hk",
   "repo": "haskell.nix",
-  "branch": "nix-haskell",
   "private": false,
-  "rev": "91ee47677307c75ba334ffd1dd5e6cd3cb6cd1ba",
-  "sha256": "0sr59xibg1sc68iqvp4s54mbxd6zy0hlbazwfd2fvy3snpw31srj"
+  "rev": "54089ab44218d6e6d392bd82b5d1953a0407d85a",
+  "sha256": "0b62842gvnpai8jw47a97dk40gcvwlzzs1a544fz9npgynx167dy"
 }

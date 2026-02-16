@@ -27,6 +27,8 @@ with lib;
         The name of the ghc compiler to use.
       '';
       example = "ghc884";
+      default = "ghc914";
+      defaultText = "ghc914";
     };
 
     extraCabalProject = mkOption {

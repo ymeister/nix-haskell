@@ -45,7 +45,7 @@ let eval = x: pkgs.lib.evalModules {
     haskell-nix =
       let mkProject = x:
             let config = (eval x).config;
-                proj = config.haskell-nix.haskell-nix.project config.haskell-nix.project;
+                proj = config.haskell-nix.project;
                 projOrShell = if !pkgs.lib.inNixShell
                   then proj
                   else proj.shell;

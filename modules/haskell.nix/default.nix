@@ -58,7 +58,7 @@ with lib;
         '';
       };
 
-      project = mkOption {
+      _project = mkOption {
         default = {};
         type = types.submodule {
           imports = [
@@ -101,11 +101,16 @@ with lib;
 
     };
 
+    haskell-nix.project = mkOption {
+      default = config.haskell-nix.haskell-nix.project config.haskell-nix._project;
+      type = types.raw;
+    };
+
   };
 
   config = {
 
-    haskell-nix.project = {
+    haskell-nix._project = {
       src = mkForce config.src-driver;
       hsPkgs = mkDefault null;
     };

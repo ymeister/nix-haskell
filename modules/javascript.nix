@@ -12,17 +12,17 @@ with lib;
 
       buildInputs = mkDefault (with pkgs; [ nodejs-slim ]);
 
-      shellHook = ''
-        export EM_CACHE="$TMPDIR/em_cache"
-      '';
+      #shellHook = ''
+      #  export EM_CACHE="$TMPDIR/em_cache"
+      #'';
 
     };
 
-    overrides = [
-      ({ config, ... }: {
-        configureFlags = [ "--package-db ${config.ghc.package.outPath}/${config.ghc.package.libDir}/package.conf.d" ];
-      })
-    ];
+    #overrides = [
+    #  ({ config, ... }: {
+    #    configureFlags = [ "--package-db ${config.ghc.package.outPath}/${config.ghc.package.libDir}/package.conf.d" ];
+    #  })
+    #];
 
     extraCabalProject = [
       ''

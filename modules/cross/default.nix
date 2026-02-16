@@ -1,16 +1,7 @@
-# Cross-Compilation Shell Wrapper Module
+# Cross-Compilation Support Module
 #
-# Adds convenience wrapper scripts to shell.buildInputs for each configured
-# cross-compilation target. These wrappers allow running cross-compiler tools
-# without specifying the target prefix.
-#
-# Example - with a WASM cross-compilation target, instead of running:
-#   wasm32-unknown-wasi-ghc --version
-#   wasm32-unknown-wasi-ghc-pkg list
-#
-# You can use the wrapper script:
-#   wasm32-unknown-wasi ghc --version
-#   wasm32-unknown-wasi ghc-pkg list
+# Aggregates platform-specific cross-compilation support and provides
+# common shell utilities for working with cross-compilation targets.
 #
 # Configuration:
 #   shell.crossPlatforms - Function selecting which cross targets to support
@@ -20,6 +11,24 @@
 
 {
 
+  # Platform-specific cross-compilation support modules
+  imports = [
+    ./ghcjs  # JavaScript/GHCJS target support
+  ];
+
+  # Cross-Compilation Shell Wrapper Scripts
+  #
+  # Adds convenience wrapper scripts to shell.buildInputs for each configured
+  # cross-compilation target. These wrappers allow running cross-compiler tools
+  # without specifying the target prefix.
+  #
+  # Example - with a WASM cross-compilation target, instead of running:
+  #   wasm32-unknown-wasi-ghc --version
+  #   wasm32-unknown-wasi-ghc-pkg list
+  #
+  # You can use the wrapper script:
+  #   wasm32-unknown-wasi ghc --version
+  #   wasm32-unknown-wasi ghc-pkg list
   shell.buildInputs =
     let # List of cross-compiled projects from user's crossPlatforms selection
         crossPlatforms = config.shell.crossPlatforms config.haskell-nix.project.projectCross;

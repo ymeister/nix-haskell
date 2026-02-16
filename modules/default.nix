@@ -6,8 +6,7 @@
     ./common.nix
     ./haskell.nix
 
-    ./cross.nix
-    ./javascript.nix
+    ./cross
 
     ./importing.nix
     ./pins.nix

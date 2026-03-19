@@ -4,7 +4,7 @@
 }:
 
 let extraCabal = map (a: ''
-      echo -e "\n${a}\n" >> $out/cabal.project
+      printf '%s\n' ${pkgs.lib.escapeShellArg a} >> $out/cabal.project
     '') extraCabalProject;
 
 in pkgs.runCommand "modify-project" {} (

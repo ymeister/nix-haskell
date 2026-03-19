@@ -30,10 +30,16 @@ with lib;
 
       "reflex-platform" = mkOption {
         type = types.raw;
-        default = import config.thunks."reflex-platform" { inherit system; };
+        default = import config.thunks."reflex-platform" {
+          inherit system;
+          haskell-nix = import (config.thunks."reflex-platform" + "/dep/haskell.nix") { inherit system; };
+        };
         defaultText = literalMD ''
           ```
-          import config.thunks."reflex-platform" { inherit system; }
+          import config.thunks."reflex-platform" {
+            inherit system;
+            haskell-nix = import (config.thunks."reflex-platform" + "/dep/haskell.nix") { inherit system; };
+          }
           ```
         '';
       };

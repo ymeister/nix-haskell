@@ -56,6 +56,26 @@
               (
                 # Script named after target that runs commands with wrapper in PATH
                 pkgs.writeShellScriptBin "${targetPrefix}" ''
+                  # Filter linker flags to remove native library paths that
+                  # conflict with cross-compilation. The dev shell includes
+                  # both native and cross-compiled dependencies, so
+                  # NIX_LDFLAGS contains both native and target library
+                  # paths. Passing native shared objects (e.g., native
+                  # libffi.so) to the cross-linker causes "unknown file
+                  # type" errors.
+                  _filter_ldflags() {
+                    local result=""
+                    for arg in $1; do
+                      if [[ "$arg" == -L* ]]; then
+                        [[ "$arg" == *wasm* || "$arg" == *${targetPrefix}* ]] && result="$result $arg"
+                      else
+                        result="$result $arg"
+                      fi
+                    done
+                    echo "$result"
+                  }
+                  export NIX_LDFLAGS="$(_filter_ldflags "$NIX_LDFLAGS")"
+                  export NIX_LDFLAGS_FOR_TARGET="$(_filter_ldflags "$NIX_LDFLAGS_FOR_TARGET")"
                   PATH="${ghcWrapper}/bin:$PATH" exec "$@"
                 ''
               );

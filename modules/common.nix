@@ -279,12 +279,14 @@ with lib;
       type = types.attrs;
       default = import ../libs/hackage-driver.nix {
         pkgs = config."haskell-nix".nixpkgs;
+        compiler-nix-name = config.compiler-nix-name;
         modules = config.hackage-overlays;
       };
       defaultText = literalMD ''
       ```
         import ../libs/hackage-driver.nix {
           pkgs = config."haskell-nix".nixpkgs;
+          compiler-nix-name = config.compiler-nix-name;
           modules = config.hackage-overlays;
         };
       ```

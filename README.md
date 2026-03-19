@@ -2,6 +2,8 @@
 
 A NixOS-style module system for building Haskell projects with [haskell.nix](https://github.com/input-output-hk/haskell.nix). Provides declarative configuration for compilers, dependencies, cross-compilation, and development shells.
 
+> **Note:** Currently only the `haskell.nix` driver is implemented. Support for other drivers (e.g. `nixpkgs` haskellPackages, `cabal2nix`, `reflex-platform`) is planned.
+
 
 ### Quick start
 

@@ -70,7 +70,7 @@ in with pkgs.lib; nix-haskell {
 ### Modules documentation
 
 ```
-nix run --no-write-lock-file github:reflex-frp/nix-haskell#manual
+nix run --no-write-lock-file github:reflex-frp/nix-haskell#manual-view
 ```
 
 or

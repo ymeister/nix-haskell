@@ -15,14 +15,11 @@
       packages = eachSystem (system:
         let nix-haskell = import ./default.nix { inherit system; };
             project = nix-haskell { src = ./.; };
-            flatten = prefix: attrs:
-              nixpkgs.lib.foldlAttrs (acc: name: value:
-                let key = if prefix == "" then name else "${prefix}-${name}";
-                in if nixpkgs.lib.isDerivation value then acc // { ${key} = value; }
-                   else if builtins.isAttrs value then acc // flatten key value
-                   else acc
-              ) {} attrs;
-        in flatten "" project
+        in {
+          manual-view = project.manual.view;
+          manual-md = project.manual.md;
+          manual-man = project.manual.man;
+        }
       );
     };
 

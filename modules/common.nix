@@ -114,9 +114,11 @@ with lib;
         }
       );
       default = [];
-      apply = x: [
-          { packages."${config.name}".components = config.extraSrcFiles; }
-        ] ++ x
+      apply = x:
+          lib.optional (config.extraSrcFiles != {}) {
+              packages."${config.name}".components = config.extraSrcFiles;
+            }
+          ++ x
           ++ config.overrides or []
           ++ config.hackage-driver.package-overlays or []
           ++ config.source-repository-packages-driver.overrides or [];

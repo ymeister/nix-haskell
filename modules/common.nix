@@ -152,6 +152,13 @@ with lib;
                 options = zipAttrsWith (name: vals: last vals) (map (module: ((import module { projectConfig = config."haskell-nix".project; }) module_args).options) modules);
             in {
               options = recursiveUpdate options {
+                crossPlatforms = (options.crossPlatforms or {}) // {
+                  defaultText = literalMD ''
+                    ```
+                    ps: []
+                    ```
+                  '';
+                };
                 packages = mkOption {
                   type = types.unspecified;
                   default = _: [];

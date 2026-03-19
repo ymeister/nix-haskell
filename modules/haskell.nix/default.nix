@@ -103,6 +103,11 @@ with lib;
 
     haskell-nix.project = mkOption {
       default = config.haskell-nix.haskell-nix.project config.haskell-nix._project;
+      defaultText = literalMD ''
+        ```
+        config.haskell-nix.haskell-nix.project config.haskell-nix._project
+        ```
+      '';
       type = types.raw;
     };
 

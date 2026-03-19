@@ -42,6 +42,15 @@ let eval = x: pkgs.lib.evalModules {
       ${pkgs.man}/bin/man ${optionsDocMan}
     '';
 
+    recursiveMerge = lhs: rhs:
+      zipAttrsWith (name: values:
+        if length values == 1 then head values
+        else let l = elemAt values 0; r = elemAt values 1; in
+          if isList l && isList r then l ++ r
+          else if isAttrs l && isAttrs r then recursiveMerge l r
+          else r
+      ) [ lhs rhs ];
+
     haskell-nix =
       let mkProject = x:
             let config = (eval x).config;
@@ -51,7 +60,7 @@ let eval = x: pkgs.lib.evalModules {
                   else proj.shell;
             in projOrShell // {
               inherit config;
-              override = y: mkProject (inputs: recursiveUpdate (x inputs) (y inputs));
+              override = y: mkProject (inputs: recursiveMerge (x inputs) (y inputs));
             };
       in {
         project = mkProject module;

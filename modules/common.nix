@@ -320,6 +320,8 @@ with lib;
 
     shell = {
 
+      crossPlatforms = mkDefault (_: []);
+
       tools = {
         cabal = mkDefault "latest";
       };

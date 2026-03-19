@@ -46,10 +46,14 @@ with lib;
 
       "nix-thunk" = mkOption {
         type = types.raw;
-        default = import config.thunks."nix-thunk" {};
+        default = import config.thunks."nix-thunk" {
+          haskell-nix = import (config.thunks."nix-thunk" + "/dep/haskell.nix") { inherit system; };
+        };
         defaultText = literalMD ''
           ```
-          import config.thunks."nix-thunk" {}
+          import config.thunks."nix-thunk" {
+            haskell-nix = import (config.thunks."nix-thunk" + "/dep/haskell.nix") { inherit system; };
+          }
           ```
         '';
       };

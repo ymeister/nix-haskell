@@ -28,8 +28,12 @@ let eval = x: pkgs.lib.evalModules {
       };
     };
 
+    evaluated = eval module;
+    config = evaluated.config;
+    options = evaluated.options;
+
     optionsDoc = pkgs.nixosOptionsDoc {
-      inherit (eval module) options;
+      inherit options;
       warningsAreErrors = false;
     };
     optionsDocMD = pkgs.runCommand "options-doc.md" {} ''
@@ -38,7 +42,7 @@ let eval = x: pkgs.lib.evalModules {
     optionsDocMan = pkgs.runCommand "options-doc.man" {} ''
       ${pkgs.pandoc}/bin/pandoc --standalone --to man ${optionsDocMD} -o $out
     '';
-    manual = pkgs.writeShellScriptBin "manual" ''
+    viewManual = pkgs.writeShellScriptBin "manual" ''
       ${pkgs.man}/bin/man ${optionsDocMan}
     '';
 
@@ -67,15 +71,18 @@ let eval = x: pkgs.lib.evalModules {
       };
 
 
-in rec {
-  nixpkgs = (eval module).config.importing.nixpkgs;
+in {
+  inherit config haskell-nix;
 
-  inherit haskell-nix;
+  nixpkgs = config.importing.nixpkgs;
 
   project = {
     haskell-nix = haskell-nix.project;
   };
 
-  inherit manual;
-  manualMarkdown = optionsDocMD;
+  manual = {
+    man = optionsDocMan;
+    md = optionsDocMD;
+    view = viewManual;
+  };
 }

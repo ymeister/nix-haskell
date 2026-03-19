@@ -6,20 +6,23 @@
           ];
     in {
       lib = eachSystem (system:
-        let project = import ./default.nix { inherit system; };
+        let nix-haskell = import ./default.nix { inherit system; };
         in {
-          nix-haskell = project;
-          haskell-nix = module: (project module).haskell-nix;
-          manual = module: (project module).manual;
-        }
+          inherit nix-haskell;
+        } // nixpkgs.lib.mapAttrs (name: _: module: (nix-haskell module).${name}) (nix-haskell {})
       );
 
       packages = eachSystem (system:
-        let project = import ./default.nix { inherit system; };
-        in {
-          manual = (project { src = ./.; }).manual;
-          manualMarkdown = (project { src = ./.; }).manualMarkdown;
-        }
+        let nix-haskell = import ./default.nix { inherit system; };
+            project = nix-haskell { src = ./.; };
+            flatten = prefix: attrs:
+              nixpkgs.lib.foldlAttrs (acc: name: value:
+                let key = if prefix == "" then name else "${prefix}-${name}";
+                in if nixpkgs.lib.isDerivation value then acc // { ${key} = value; }
+                   else if builtins.isAttrs value then acc // flatten key value
+                   else acc
+              ) {} attrs;
+        in flatten "" project
       );
     };
 

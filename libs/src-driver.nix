@@ -10,6 +10,9 @@ let extraCabal = map (a: ''
 in pkgs.runCommand "modify-project" {} (
   ''
     cp -r ${src} $out
-    chmod +w $out/cabal.project
+    chmod +w $out
+    if [ -f $out/cabal.project ]; then
+      chmod +w $out/cabal.project
+    fi
   '' + builtins.concatStringsSep "\n" extraCabal
 )

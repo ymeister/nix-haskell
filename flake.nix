@@ -1,18 +1,27 @@
 {
-  inputs.flake-utils.url = "github:numtide/flake-utils";
+  outputs = { self, nixpkgs, ... }:
+    let eachSystem = nixpkgs.lib.genAttrs
+          [ "x86_64-linux"
+            "aarch64-linux"
+          ];
+    in {
+      lib = eachSystem (system:
+        let project = import ./default.nix { inherit system; };
+        in {
+          nix-haskell = project;
+          haskell-nix = module: (project module).haskell-nix;
+          manual = module: (project module).manual;
+        }
+      );
 
-  outputs = { self, flake-utils, ... }:
-    flake-utils.lib.eachDefaultSystem (system:
-      let project = import ./default.nix { inherit system; };
-      in {
-        lib.nix-haskell = project;
-        lib.haskell-nix = module: (project module).haskell-nix;
-        lib.manual = module: (project module).manual;
-
-        packages.manual = (project { src = ./.; }).manual;
-        packages.manualMarkdown = (project { src = ./.; }).manualMarkdown;
-      }
-    );
+      packages = eachSystem (system:
+        let project = import ./default.nix { inherit system; };
+        in {
+          manual = (project { src = ./.; }).manual;
+          manualMarkdown = (project { src = ./.; }).manualMarkdown;
+        }
+      );
+    };
 
   nixConfig = {
     extra-substituters = [

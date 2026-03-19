@@ -199,17 +199,26 @@ with lib;
       type = types.nullOr types.attrs;
       default = {};
       apply = x: (if config.hackage-overlays == [] then {} else config.hackage-driver.extra-hackage-tarballs) // x;
+      description = ''
+        Additional Hackage tarball indices to pass to haskell.nix. Automatically includes tarballs from `hackage-overlays` when set.
+      '';
     };
 
     extra-hackages = mkOption {
       type = types.nullOr (types.listOf types.unspecified);
       default = [];
       apply = x: (if config.hackage-overlays == [] then [] else config.hackage-driver.extra-hackages) ++ x;
+      description = ''
+        Additional Hackage package sets for the cabal solver. Automatically includes packages from `hackage-overlays` when set.
+      '';
     };
 
     pkg-def-extras = mkOption {
       type = types.nullOr (types.listOf types.unspecified);
       default = [];
+      description = ''
+        Extra package definition functions to pass to haskell.nix.
+      '';
     };
 
 
@@ -292,6 +301,9 @@ with lib;
       ```
       '';
       readOnly = true;
+      description = ''
+        Internal driver that generates a fake Hackage index from `hackage-overlays`.
+      '';
     };
 
     hackage-overlays = mkOption {

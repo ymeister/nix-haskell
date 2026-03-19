@@ -134,12 +134,12 @@ shell = {
 
 When GHCJS is in `crossPlatforms`, Node.js is automatically added to `buildInputs`.
 
-#### haskell.nix project
+#### haskell.nix options
 
 Pass options directly to the underlying haskell.nix project:
 
 ```nix
-haskell-nix.project = {
+haskell-nix.options = {
   # haskell.nix specific configuration
 };
 ```

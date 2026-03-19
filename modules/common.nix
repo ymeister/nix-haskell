@@ -149,7 +149,7 @@ with lib;
                   pkgconfPkgs = import (config.thunks."haskell-nix" + "/lib/pkgconf-nixpkgs-map.nix") config."haskell-nix".nixpkgs;
                   haskellLib = config."haskell-nix".lib;
                 };
-                options = zipAttrsWith (name: vals: last vals) (map (module: ((import module { projectConfig = config."haskell-nix".project; }) module_args).options) modules);
+                options = zipAttrsWith (name: vals: last vals) (map (module: ((import module { projectConfig = config."haskell-nix".options; }) module_args).options) modules);
             in {
               options = recursiveUpdate options {
                 crossPlatforms = (options.crossPlatforms or {}) // {

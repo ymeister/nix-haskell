@@ -58,7 +58,7 @@ with lib;
         '';
       };
 
-      _project = mkOption {
+      options = mkOption {
         default = {};
         type = types.submodule {
           imports = [
@@ -99,23 +99,23 @@ with lib;
         };
       };
 
-    };
+      project = mkOption {
+        default = config.haskell-nix.haskell-nix.project config.haskell-nix.options;
+        defaultText = literalMD ''
+          ```
+          config.haskell-nix.haskell-nix.project config.haskell-nix.options
+          ```
+        '';
+        type = types.raw;
+      };
 
-    haskell-nix.project = mkOption {
-      default = config.haskell-nix.haskell-nix.project config.haskell-nix._project;
-      defaultText = literalMD ''
-        ```
-        config.haskell-nix.haskell-nix.project config.haskell-nix._project
-        ```
-      '';
-      type = types.raw;
     };
 
   };
 
   config = {
 
-    haskell-nix._project = {
+    haskell-nix.options = {
       src = mkForce config.src-driver;
       hsPkgs = mkDefault null;
     };

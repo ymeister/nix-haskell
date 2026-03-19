@@ -1,7 +1,7 @@
 {
-  "owner": "input-output-hk",
+  "owner": "ymeister",
   "repo": "haskell.nix",
   "private": false,
-  "rev": "c29714dcb5034c20e932f621abe592d4d4b4274d",
-  "sha256": "12dl5wixma4wnqg8wkdv0q56ks4rdyk2dyh49v5qx7bmhz66vdjc"
+  "rev": "9fa7c11202e16c8cd2743deed4d811da1cfb2e51",
+  "sha256": "1kqz9mbmg68x2agj1wi7zq09kq3c8laa0lrbxpwxsp5allyk4mal"
 }

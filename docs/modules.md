@@ -83,7 +83,7 @@ string
 ` "ghc884" `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -91,7 +91,7 @@ string
 
 
 
-This option has no description\.
+Additional Hackage tarball indices to pass to haskell\.nix\. Automatically includes tarballs from ` hackage-overlays ` when set\.
 
 
 
@@ -104,7 +104,7 @@ null or (attribute set)
 ` { } `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -112,7 +112,7 @@ null or (attribute set)
 
 
 
-This option has no description\.
+Additional Hackage package sets for the cabal solver\. Automatically includes packages from ` hackage-overlays ` when set\.
 
 
 
@@ -125,7 +125,7 @@ null or (list of unspecified value)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -146,7 +146,7 @@ list of strings concatenated with “\\n”
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -167,7 +167,7 @@ attribute set
 ` { } `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -175,7 +175,7 @@ attribute set
 
 
 
-This option has no description\.
+Internal driver that generates a fake Hackage index from ` hackage-overlays `\.
 
 
 
@@ -189,12 +189,13 @@ attribute set *(read only)*
 ```
   import ../libs/hackage-driver.nix {
     pkgs = config."haskell-nix".nixpkgs;
+    compiler-nix-name = config.compiler-nix-name;
     modules = config.hackage-overlays;
   };
 ```
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -239,11 +240,131 @@ list of (attribute set)
 ```
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
-## haskell-nix\._project
+## haskell-nix\.haskell-nix
+
+
+
+This option has no description\.
+
+
+
+*Type:*
+raw value
+
+
+
+*Default:*
+
+```
+config."haskell-nix".nixpkgs.haskell-nix
+```
+
+*Declared by:*
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+
+
+
+## haskell-nix\.lib
+
+
+
+This option has no description\.
+
+
+
+*Type:*
+raw value
+
+
+
+*Default:*
+
+```
+config."haskell-nix".haskell-nix.haskellLib
+```
+
+*Declared by:*
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+
+
+
+## haskell-nix\.nixpkgs
+
+
+
+This option has no description\.
+
+
+
+*Type:*
+raw value
+
+
+
+*Default:*
+
+```
+import config."haskell-nix".nixpkgsSource ({ inherit system; } // config."haskell-nix".nixpkgsArgs)
+```
+
+*Declared by:*
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+
+
+
+## haskell-nix\.nixpkgsArgs
+
+
+
+This option has no description\.
+
+
+
+*Type:*
+raw value
+
+
+
+*Default:*
+
+```
+config.importing."haskell-nix".nixpkgsArgs
+```
+
+*Declared by:*
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+
+
+
+## haskell-nix\.nixpkgsSource
+
+
+
+This option has no description\.
+
+
+
+*Type:*
+raw value
+
+
+
+*Default:*
+
+```
+config.importing."haskell-nix".sources.nixpkgs-unstable
+```
+
+*Declared by:*
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+
+
+
+## haskell-nix\.options
 
 
 
@@ -260,11 +381,11 @@ submodule
 ` { } `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.cabalProject
+## haskell-nix\.options\.cabalProject
 
 
 
@@ -281,11 +402,11 @@ null or strings concatenated with “\\n”
 ` null `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.cabalProjectFileName
+## haskell-nix\.options\.cabalProjectFileName
 
 
 
@@ -302,32 +423,11 @@ string
 ` "cabal.project" `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.cabalProjectFreeze
-
-
-
-This option has no description\.
-
-
-
-*Type:*
-null or strings concatenated with “\\n”
-
-
-
-*Default:*
-` null `
-
-*Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
-
-
-
-## haskell-nix\._project\.cabalProjectLocal
+## haskell-nix\.options\.cabalProjectFreeze
 
 
 
@@ -344,11 +444,32 @@ null or strings concatenated with “\\n”
 ` null `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.checkMaterialization
+## haskell-nix\.options\.cabalProjectLocal
+
+
+
+This option has no description\.
+
+
+
+*Type:*
+null or strings concatenated with “\\n”
+
+
+
+*Default:*
+` null `
+
+*Declared by:*
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+
+
+
+## haskell-nix\.options\.checkMaterialization
 
 
 
@@ -365,11 +486,11 @@ null or boolean
 ` null `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.compiler-nix-name
+## haskell-nix\.options\.compiler-nix-name
 
 
 
@@ -381,11 +502,11 @@ The name of the ghc compiler to use eg\. “ghc884”
 string
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.compilerSelection
+## haskell-nix\.options\.compilerSelection
 
 
 
@@ -402,11 +523,11 @@ unspecified value
 ` <function> `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.configureArgs
+## haskell-nix\.options\.configureArgs
 
 
 
@@ -427,11 +548,11 @@ null or strings concatenated with " "
 ` "" `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.crossPlatforms
+## haskell-nix\.options\.crossPlatforms
 
 
 
@@ -448,11 +569,11 @@ unspecified value
 ` <function> `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.evalPackages
+## haskell-nix\.options\.evalPackages
 
 
 
@@ -487,11 +608,11 @@ else
 ```
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.evalSrc
+## haskell-nix\.options\.evalSrc
 
 
 
@@ -511,14 +632,14 @@ absolute path or package
 
 
 *Default:*
-` /nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source `
+` /nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.evalSystem
+## haskell-nix\.options\.evalSystem
 
 
 
@@ -539,11 +660,11 @@ string
 ` "x86_64-linux" `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.extra-hackage-tarballs
+## haskell-nix\.options\.extra-hackage-tarballs
 
 
 
@@ -560,11 +681,11 @@ null or (attribute set)
 ` { } `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.extra-hackages
+## haskell-nix\.options\.extra-hackages
 
 
 
@@ -581,11 +702,11 @@ null or (list of unspecified value)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.flake
+## haskell-nix\.options\.flake
 
 
 
@@ -602,11 +723,11 @@ submodule
 ` { } `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.flake\.packages
+## haskell-nix\.options\.flake\.packages
 
 
 
@@ -623,11 +744,11 @@ unspecified value
 ` <function> `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.flake\.coverageProjectModule
+## haskell-nix\.options\.flake\.coverageProjectModule
 
 
 
@@ -646,11 +767,11 @@ unspecified value
 ` { } `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.flake\.crossPlatforms
+## haskell-nix\.options\.flake\.crossPlatforms
 
 
 
@@ -667,11 +788,11 @@ unspecified value
 ` <function> `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.flake\.doCoverage
+## haskell-nix\.options\.flake\.doCoverage
 
 
 
@@ -689,11 +810,11 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.flake\.variants
+## haskell-nix\.options\.flake\.variants
 
 
 
@@ -723,11 +844,11 @@ attribute set of unspecified value
 ` { } `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.ghc
+## haskell-nix\.options\.ghc
 
 
 
@@ -744,11 +865,11 @@ null or package
 ` null `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.ghcOverride
+## haskell-nix\.options\.ghcOverride
 
 
 
@@ -765,11 +886,11 @@ null or package
 ` null `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.hsPkgs
+## haskell-nix\.options\.hsPkgs
 
 
 
@@ -781,11 +902,11 @@ This option has no description\.
 unspecified value
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.ignorePackageYaml
+## haskell-nix\.options\.ignorePackageYaml
 
 
 
@@ -802,11 +923,11 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.index-sha256
+## haskell-nix\.options\.index-sha256
 
 
 
@@ -823,11 +944,11 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.index-state
+## haskell-nix\.options\.index-state
 
 
 
@@ -844,11 +965,11 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.inputMap
+## haskell-nix\.options\.inputMap
 
 
 
@@ -870,11 +991,11 @@ null or (attribute set)
 ` { } `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.materialized
+## haskell-nix\.options\.materialized
 
 
 
@@ -891,11 +1012,11 @@ null or absolute path or package
 ` null `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.modules
+## haskell-nix\.options\.modules
 
 
 
@@ -912,11 +1033,11 @@ null or (list of unspecified value)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.name
+## haskell-nix\.options\.name
 
 
 
@@ -933,11 +1054,11 @@ null or string
 ` "haskell-project" `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.nix-tools
+## haskell-nix\.options\.nix-tools
 
 
 
@@ -954,11 +1075,11 @@ null or package
 ` null `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.pkg-def-extras
+## haskell-nix\.options\.pkg-def-extras
 
 
 
@@ -975,11 +1096,11 @@ null or (list of unspecified value)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.plan-sha256
+## haskell-nix\.options\.plan-sha256
 
 
 
@@ -996,11 +1117,11 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.prebuilt-depends
+## haskell-nix\.options\.prebuilt-depends
 
 
 
@@ -1019,11 +1140,11 @@ list of package
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.projectFileName
+## haskell-nix\.options\.projectFileName
 
 
 
@@ -1040,11 +1161,11 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.sha256map
+## haskell-nix\.options\.sha256map
 
 
 
@@ -1072,11 +1193,11 @@ null or (attribute set of (string or attribute set of string))
 ```
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.shell
+## haskell-nix\.options\.shell
 
 
 
@@ -1095,11 +1216,11 @@ submodule
 ` { } `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.shell\.enableDWARF
+## haskell-nix\.options\.shell\.enableDWARF
 
 
 
@@ -1116,11 +1237,11 @@ unspecified value
 ` false `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.shell\.packageSetupDeps
+## haskell-nix\.options\.shell\.packageSetupDeps
 
 
 
@@ -1137,32 +1258,11 @@ unspecified value
 ` true `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.shell\.packages
-
-
-
-This option has no description\.
-
-
-
-*Type:*
-unspecified value
-
-
-
-*Default:*
-` <function> `
-
-*Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
-
-
-
-## haskell-nix\._project\.shell\.additional
+## haskell-nix\.options\.shell\.packages
 
 
 
@@ -1179,11 +1279,32 @@ unspecified value
 ` <function> `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.shell\.allToolDeps
+## haskell-nix\.options\.shell\.additional
+
+
+
+This option has no description\.
+
+
+
+*Type:*
+unspecified value
+
+
+
+*Default:*
+` <function> `
+
+*Declared by:*
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+
+
+
+## haskell-nix\.options\.shell\.allToolDeps
 
 
 
@@ -1203,11 +1324,11 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.shell\.buildInputs
+## haskell-nix\.options\.shell\.buildInputs
 
 
 
@@ -1224,32 +1345,11 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.shell\.components
-
-
-
-This option has no description\.
-
-
-
-*Type:*
-unspecified value
-
-
-
-*Default:*
-` <function> `
-
-*Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
-
-
-
-## haskell-nix\._project\.shell\.crossPlatforms
+## haskell-nix\.options\.shell\.components
 
 
 
@@ -1266,11 +1366,32 @@ unspecified value
 ` <function> `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.shell\.exactDeps
+## haskell-nix\.options\.shell\.crossPlatforms
+
+
+
+This option has no description\.
+
+
+
+*Type:*
+unspecified value
+
+
+
+*Default:*
+` <function> `
+
+*Declared by:*
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+
+
+
+## haskell-nix\.options\.shell\.exactDeps
 
 
 
@@ -1287,11 +1408,11 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.shell\.inputsFrom
+## haskell-nix\.options\.shell\.inputsFrom
 
 
 
@@ -1308,11 +1429,11 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.shell\.name
+## haskell-nix\.options\.shell\.name
 
 
 
@@ -1329,11 +1450,11 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.shell\.nativeBuildInputs
+## haskell-nix\.options\.shell\.nativeBuildInputs
 
 
 
@@ -1350,11 +1471,11 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.shell\.passthru
+## haskell-nix\.options\.shell\.passthru
 
 
 
@@ -1371,11 +1492,11 @@ attribute set of unspecified value
 ` { } `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.shell\.shellHook
+## haskell-nix\.options\.shell\.shellHook
 
 
 
@@ -1392,11 +1513,11 @@ string
 ` "" `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.shell\.tools
+## haskell-nix\.options\.shell\.tools
 
 
 
@@ -1413,32 +1534,11 @@ attribute set of unspecified value
 ` { } `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.shell\.withHaddock
-
-
-
-This option has no description\.
-
-
-
-*Type:*
-boolean
-
-
-
-*Default:*
-` true `
-
-*Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
-
-
-
-## haskell-nix\._project\.shell\.withHoogle
+## haskell-nix\.options\.shell\.withHaddock
 
 
 
@@ -1455,11 +1555,32 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.source-repo-override
+## haskell-nix\.options\.shell\.withHoogle
+
+
+
+This option has no description\.
+
+
+
+*Type:*
+boolean
+
+
+
+*Default:*
+` true `
+
+*Declared by:*
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+
+
+
+## haskell-nix\.options\.source-repo-override
 
 
 
@@ -1476,11 +1597,11 @@ attribute set of function that evaluates to a(n) (attribute set)
 ` { } `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.src
+## haskell-nix\.options\.src
 
 
 
@@ -1492,11 +1613,11 @@ This option has no description\.
 absolute path or package
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
-## haskell-nix\._project\.supportHpack
+## haskell-nix\.options\.supportHpack
 
 
 
@@ -1513,127 +1634,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
-
-
-
-## haskell-nix\.haskell-nix
-
-
-
-This option has no description\.
-
-
-
-*Type:*
-raw value
-
-
-
-*Default:*
-
-```
-config."haskell-nix".nixpkgs.haskell-nix
-```
-
-*Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
-
-
-
-## haskell-nix\.lib
-
-
-
-This option has no description\.
-
-
-
-*Type:*
-raw value
-
-
-
-*Default:*
-
-```
-config."haskell-nix".haskell-nix.haskellLib
-```
-
-*Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
-
-
-
-## haskell-nix\.nixpkgs
-
-
-
-This option has no description\.
-
-
-
-*Type:*
-raw value
-
-
-
-*Default:*
-
-```
-import config."haskell-nix".nixpkgsSource ({ inherit system; } // config."haskell-nix".nixpkgsArgs)
-```
-
-*Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
-
-
-
-## haskell-nix\.nixpkgsArgs
-
-
-
-This option has no description\.
-
-
-
-*Type:*
-raw value
-
-
-
-*Default:*
-
-```
-config.importing."haskell-nix".nixpkgsArgs
-```
-
-*Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
-
-
-
-## haskell-nix\.nixpkgsSource
-
-
-
-This option has no description\.
-
-
-
-*Type:*
-raw value
-
-
-
-*Default:*
-
-```
-config.importing."haskell-nix".sources.nixpkgs-unstable
-```
-
-*Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
@@ -1653,11 +1654,11 @@ raw value
 *Default:*
 
 ```
-config.haskell-nix.haskell-nix.project config.haskell-nix._project
+config.haskell-nix.haskell-nix.project config.haskell-nix.options
 ```
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/haskell.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
 
 
 
@@ -1681,7 +1682,7 @@ import config.thunks."haskell-nix" { inherit system; }
 ```
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/importing\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/importing.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/importing\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/importing.nix)
 
 
 
@@ -1701,11 +1702,13 @@ raw value
 *Default:*
 
 ```
-import config.thunks."nix-thunk" {}
+import config.thunks."nix-thunk" {
+  haskell-nix = import (config.thunks."nix-thunk" + "/dep/haskell.nix") { inherit system; };
+}
 ```
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/importing\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/importing.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/importing\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/importing.nix)
 
 
 
@@ -1729,7 +1732,7 @@ import config.thunks."nixpkgs" { inherit system; }
 ```
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/importing\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/importing.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/importing\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/importing.nix)
 
 
 
@@ -1749,11 +1752,14 @@ raw value
 *Default:*
 
 ```
-import config.thunks."reflex-platform" { inherit system; }
+import config.thunks."reflex-platform" {
+  inherit system;
+  haskell-nix = import (config.thunks."reflex-platform" + "/dep/haskell.nix") { inherit system; };
+}
 ```
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/importing\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/importing.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/importing\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/importing.nix)
 
 
 
@@ -1779,7 +1785,7 @@ null or string
 ` "2019-10-10T00:00:00Z" `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -1812,7 +1818,7 @@ attribute set
 ```
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -1847,7 +1853,7 @@ boolean
 ```
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/cross/ghcjs](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/cross/ghcjs)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/cross/ghcjs](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/cross/ghcjs)
 
 
 
@@ -1868,7 +1874,7 @@ list of (submodule) *(read only)*
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -1887,7 +1893,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -1908,7 +1914,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -1929,7 +1935,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -1950,7 +1956,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -1971,7 +1977,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -1992,7 +1998,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -2013,7 +2019,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -2034,7 +2040,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -2055,7 +2061,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -2071,7 +2077,7 @@ This option has no description\.
 attribute set of (submodule)
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -2092,7 +2098,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -2113,7 +2119,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -2134,7 +2140,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -2155,7 +2161,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -2176,7 +2182,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -2197,7 +2203,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -2218,7 +2224,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -2239,7 +2245,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -2255,7 +2261,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2271,7 +2277,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2292,7 +2298,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2313,7 +2319,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2329,7 +2335,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2350,7 +2356,7 @@ string
 ` "" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2371,7 +2377,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2387,7 +2393,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2408,7 +2414,7 @@ string
 ` "MinimalDetails" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2429,7 +2435,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2450,7 +2456,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2471,7 +2477,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2487,7 +2493,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2508,7 +2514,7 @@ string
 ` "\${config.package.identifier.name}-\${config.package.identifier.version}" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2524,7 +2530,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2540,7 +2546,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2561,7 +2567,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2582,7 +2588,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2603,7 +2609,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2619,7 +2625,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2640,7 +2646,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2656,7 +2662,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2677,7 +2683,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2693,7 +2699,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2714,7 +2720,7 @@ string
 ` "" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2730,7 +2736,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2751,7 +2757,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2767,7 +2773,7 @@ The merged dependencies of all other components
 submodule
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -2788,7 +2794,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -2809,7 +2815,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -2830,7 +2836,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -2851,7 +2857,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -2872,7 +2878,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -2893,7 +2899,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -2914,7 +2920,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -2935,7 +2941,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -2956,7 +2962,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -2977,7 +2983,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -2998,7 +3004,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -3019,7 +3025,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -3040,7 +3046,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -3061,7 +3067,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -3082,7 +3088,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -3104,7 +3110,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -3125,7 +3131,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -3146,7 +3152,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -3167,7 +3173,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -3188,7 +3194,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -3209,7 +3215,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -3230,7 +3236,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -3251,7 +3257,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -3272,7 +3278,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -3293,7 +3299,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -3314,7 +3320,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -3335,7 +3341,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -3356,7 +3362,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -3377,7 +3383,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -3398,7 +3404,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -3419,7 +3425,7 @@ list of (null or package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -3440,7 +3446,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -3461,7 +3467,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -3487,7 +3493,7 @@ list of unspecified value
 ```
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -3508,7 +3514,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -3529,7 +3535,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -3550,7 +3556,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -3571,7 +3577,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -3592,7 +3598,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -3613,7 +3619,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -3634,7 +3640,7 @@ list of (null or package or list of package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -3655,7 +3661,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -3676,7 +3682,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -3697,7 +3703,7 @@ list of list of package
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -3718,7 +3724,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -3739,7 +3745,7 @@ null or (list of unspecified value)
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -3760,7 +3766,7 @@ list of (submodule)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -3781,7 +3787,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -3797,7 +3803,7 @@ This option has no description\.
 unspecified value
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -3813,7 +3819,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -3834,7 +3840,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -3855,7 +3861,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -3876,7 +3882,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -3897,7 +3903,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -3918,7 +3924,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -3939,7 +3945,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -3960,7 +3966,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -3981,7 +3987,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -4002,7 +4008,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -4023,7 +4029,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -4044,7 +4050,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -4065,7 +4071,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -4086,7 +4092,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -4107,7 +4113,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -4128,7 +4134,7 @@ null or strings concatenated with “\\n”
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -4149,7 +4155,7 @@ null or string
 ` "default" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4170,7 +4176,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4191,7 +4197,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4212,7 +4218,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4233,7 +4239,7 @@ unspecified value
 ` "" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4254,7 +4260,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4280,7 +4286,7 @@ list of string
 ` "echo" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -4301,7 +4307,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4322,7 +4328,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4343,7 +4349,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -4364,7 +4370,7 @@ attribute set of (submodule)
 ` { } `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -4385,7 +4391,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4406,7 +4412,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4427,7 +4433,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4448,7 +4454,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4469,7 +4475,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4490,7 +4496,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4511,7 +4517,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4532,7 +4538,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4553,7 +4559,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -4574,7 +4580,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -4595,7 +4601,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4616,7 +4622,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -4635,7 +4641,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -4656,7 +4662,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4677,7 +4683,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4699,7 +4705,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -4720,7 +4726,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -4741,7 +4747,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -4762,7 +4768,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4783,7 +4789,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4804,7 +4810,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4825,7 +4831,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4846,7 +4852,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4867,7 +4873,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4888,7 +4894,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4909,7 +4915,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4930,7 +4936,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4951,7 +4957,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4972,7 +4978,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -4993,7 +4999,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -5014,7 +5020,7 @@ list of (null or package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -5035,7 +5041,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -5056,7 +5062,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -5082,7 +5088,7 @@ list of unspecified value
 ```
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -5103,7 +5109,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -5124,7 +5130,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -5145,7 +5151,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -5166,7 +5172,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -5187,7 +5193,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -5208,7 +5214,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -5229,7 +5235,7 @@ list of (null or package or list of package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -5250,7 +5256,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -5271,7 +5277,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -5292,7 +5298,7 @@ list of list of package
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -5313,7 +5319,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -5334,7 +5340,7 @@ null or (list of unspecified value)
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -5355,7 +5361,7 @@ list of (submodule)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -5376,7 +5382,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -5392,7 +5398,7 @@ This option has no description\.
 unspecified value
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -5408,7 +5414,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -5429,7 +5435,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -5450,7 +5456,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -5471,7 +5477,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -5492,7 +5498,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -5513,7 +5519,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -5534,7 +5540,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -5555,7 +5561,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -5576,7 +5582,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -5597,7 +5603,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -5618,7 +5624,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -5639,7 +5645,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -5660,7 +5666,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -5681,7 +5687,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -5702,7 +5708,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -5723,7 +5729,7 @@ null or strings concatenated with “\\n”
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -5744,7 +5750,7 @@ null or string
 ` "default" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -5765,7 +5771,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -5786,7 +5792,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -5807,7 +5813,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -5828,7 +5834,7 @@ unspecified value
 ` "" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -5849,7 +5855,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -5875,7 +5881,7 @@ list of string
 ` "echo" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -5896,7 +5902,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -5917,7 +5923,7 @@ attribute set of (submodule)
 ` { } `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -5938,7 +5944,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -5959,7 +5965,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -5980,7 +5986,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -6001,7 +6007,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -6022,7 +6028,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -6043,7 +6049,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -6064,7 +6070,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -6085,7 +6091,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -6106,7 +6112,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -6127,7 +6133,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -6148,7 +6154,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -6169,7 +6175,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -6190,7 +6196,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -6211,7 +6217,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -6232,7 +6238,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -6254,7 +6260,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -6275,7 +6281,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -6296,7 +6302,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -6317,7 +6323,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -6338,7 +6344,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -6359,7 +6365,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -6380,7 +6386,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -6401,7 +6407,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -6422,7 +6428,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -6443,7 +6449,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -6464,7 +6470,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -6485,7 +6491,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -6506,7 +6512,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -6527,7 +6533,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -6548,7 +6554,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -6567,7 +6573,7 @@ list of (null or package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -6588,7 +6594,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -6609,7 +6615,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -6635,7 +6641,7 @@ list of unspecified value
 ```
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -6656,7 +6662,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -6677,7 +6683,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -6698,7 +6704,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -6719,7 +6725,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -6740,7 +6746,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -6761,7 +6767,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -6782,7 +6788,7 @@ list of (null or package or list of package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -6803,7 +6809,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -6824,7 +6830,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -6845,7 +6851,7 @@ list of list of package
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -6866,7 +6872,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -6887,7 +6893,7 @@ null or (list of unspecified value)
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -6908,7 +6914,7 @@ list of (submodule)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -6929,7 +6935,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -6945,7 +6951,7 @@ This option has no description\.
 unspecified value
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -6961,7 +6967,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -6982,7 +6988,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -7003,7 +7009,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -7024,7 +7030,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -7045,7 +7051,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -7066,7 +7072,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -7087,7 +7093,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -7108,7 +7114,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -7129,7 +7135,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -7150,7 +7156,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -7171,7 +7177,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -7192,7 +7198,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -7213,7 +7219,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -7234,7 +7240,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -7255,7 +7261,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -7276,7 +7282,7 @@ null or strings concatenated with “\\n”
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -7297,7 +7303,7 @@ null or string
 ` "default" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -7318,7 +7324,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -7339,7 +7345,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -7360,7 +7366,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -7381,7 +7387,7 @@ unspecified value
 ` "" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -7402,7 +7408,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -7428,7 +7434,7 @@ list of string
 ` "echo" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -7449,7 +7455,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -7470,7 +7476,7 @@ attribute set of (submodule)
 ` { } `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -7491,7 +7497,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -7512,7 +7518,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -7533,7 +7539,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -7554,7 +7560,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -7575,7 +7581,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -7596,7 +7602,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -7617,7 +7623,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -7638,7 +7644,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -7659,7 +7665,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -7680,7 +7686,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -7701,7 +7707,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -7722,7 +7728,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -7743,7 +7749,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -7764,7 +7770,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -7785,7 +7791,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -7807,7 +7813,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -7828,7 +7834,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -7849,7 +7855,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -7870,7 +7876,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -7891,7 +7897,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -7912,7 +7918,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -7933,7 +7939,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -7954,7 +7960,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -7975,7 +7981,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -7996,7 +8002,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -8017,7 +8023,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -8038,7 +8044,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -8059,7 +8065,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -8080,7 +8086,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -8101,7 +8107,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -8122,7 +8128,7 @@ list of (null or package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -8143,7 +8149,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -8164,7 +8170,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -8190,7 +8196,7 @@ list of unspecified value
 ```
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -8211,7 +8217,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -8232,7 +8238,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -8253,7 +8259,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -8274,7 +8280,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -8295,7 +8301,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -8316,7 +8322,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -8337,7 +8343,7 @@ list of (null or package or list of package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -8358,7 +8364,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -8379,7 +8385,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -8400,7 +8406,7 @@ list of list of package
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -8421,7 +8427,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -8442,7 +8448,7 @@ null or (list of unspecified value)
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -8463,7 +8469,7 @@ list of (submodule)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -8484,7 +8490,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -8500,7 +8506,7 @@ This option has no description\.
 unspecified value
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -8516,7 +8522,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -8537,7 +8543,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -8558,7 +8564,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -8579,7 +8585,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -8600,7 +8606,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -8621,7 +8627,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -8642,7 +8648,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -8661,7 +8667,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -8682,7 +8688,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -8703,7 +8709,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -8724,7 +8730,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -8745,7 +8751,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -8766,7 +8772,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -8787,7 +8793,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -8808,7 +8814,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -8829,7 +8835,7 @@ null or strings concatenated with “\\n”
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -8850,7 +8856,7 @@ null or string
 ` "default" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -8871,7 +8877,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -8892,7 +8898,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -8913,7 +8919,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -8934,7 +8940,7 @@ unspecified value
 ` "" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -8955,7 +8961,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -8981,7 +8987,7 @@ list of string
 ` "echo" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -9002,7 +9008,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -9023,7 +9029,7 @@ null or (submodule)
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -9044,7 +9050,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -9065,7 +9071,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -9086,7 +9092,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -9107,7 +9113,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -9128,7 +9134,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -9149,7 +9155,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -9170,7 +9176,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -9191,7 +9197,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -9212,7 +9218,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -9233,7 +9239,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -9254,7 +9260,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -9275,7 +9281,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -9296,7 +9302,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -9317,7 +9323,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -9338,7 +9344,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -9360,7 +9366,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -9381,7 +9387,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -9402,7 +9408,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -9423,7 +9429,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -9444,7 +9450,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -9465,7 +9471,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -9486,7 +9492,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -9507,7 +9513,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -9528,7 +9534,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -9549,7 +9555,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -9570,7 +9576,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -9591,7 +9597,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -9612,7 +9618,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -9633,7 +9639,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -9654,7 +9660,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -9675,7 +9681,7 @@ list of (null or package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -9696,7 +9702,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -9717,7 +9723,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -9743,7 +9749,7 @@ list of unspecified value
 ```
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -9764,7 +9770,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -9785,7 +9791,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -9806,7 +9812,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -9827,7 +9833,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -9848,7 +9854,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -9869,7 +9875,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -9890,7 +9896,7 @@ list of (null or package or list of package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -9911,7 +9917,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -9932,7 +9938,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -9953,7 +9959,7 @@ list of list of package
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -9974,7 +9980,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -9995,7 +10001,7 @@ null or (list of unspecified value)
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -10016,7 +10022,7 @@ list of (submodule)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -10037,7 +10043,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -10053,7 +10059,7 @@ This option has no description\.
 unspecified value
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -10069,7 +10075,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -10090,7 +10096,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -10111,7 +10117,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -10132,7 +10138,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -10153,7 +10159,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -10174,7 +10180,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -10195,7 +10201,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -10216,7 +10222,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -10237,7 +10243,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -10258,7 +10264,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -10279,7 +10285,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -10300,7 +10306,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -10321,7 +10327,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -10342,7 +10348,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -10363,7 +10369,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -10384,7 +10390,7 @@ null or strings concatenated with “\\n”
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -10405,7 +10411,7 @@ null or string
 ` "default" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -10426,7 +10432,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -10447,7 +10453,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -10468,7 +10474,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -10489,7 +10495,7 @@ unspecified value
 ` "" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -10510,7 +10516,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -10536,7 +10542,7 @@ list of string
 ` "echo" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -10557,7 +10563,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -10600,7 +10606,7 @@ null or (submodule)
 ```
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -10621,7 +10627,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -10642,7 +10648,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -10663,7 +10669,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -10684,7 +10690,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -10705,7 +10711,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -10726,7 +10732,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -10747,7 +10753,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -10768,7 +10774,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -10789,7 +10795,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -10810,7 +10816,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -10831,7 +10837,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -10852,7 +10858,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -10873,7 +10879,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -10894,7 +10900,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -10915,7 +10921,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -10937,7 +10943,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -10956,7 +10962,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -10977,7 +10983,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -10998,7 +11004,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -11019,7 +11025,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -11040,7 +11046,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -11061,7 +11067,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -11082,7 +11088,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -11103,7 +11109,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -11124,7 +11130,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -11145,7 +11151,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -11166,7 +11172,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -11187,7 +11193,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -11208,7 +11214,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -11229,7 +11235,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -11250,7 +11256,7 @@ list of (null or package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -11271,7 +11277,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -11292,7 +11298,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -11318,7 +11324,7 @@ list of unspecified value
 ```
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -11339,7 +11345,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -11360,7 +11366,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -11381,7 +11387,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -11402,7 +11408,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -11423,7 +11429,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -11444,7 +11450,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -11465,7 +11471,7 @@ list of (null or package or list of package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -11486,7 +11492,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -11507,7 +11513,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -11528,7 +11534,7 @@ list of list of package
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -11549,7 +11555,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -11570,7 +11576,7 @@ null or (list of unspecified value)
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -11591,7 +11597,7 @@ list of (submodule)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -11612,7 +11618,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -11628,7 +11634,7 @@ This option has no description\.
 unspecified value
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -11644,7 +11650,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -11665,7 +11671,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -11686,7 +11692,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -11707,7 +11713,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -11728,7 +11734,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -11749,7 +11755,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -11770,7 +11776,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -11791,7 +11797,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -11812,7 +11818,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -11833,7 +11839,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -11854,7 +11860,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -11875,7 +11881,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -11896,7 +11902,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -11917,7 +11923,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -11938,7 +11944,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -11959,7 +11965,7 @@ null or strings concatenated with “\\n”
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -11980,7 +11986,7 @@ null or string
 ` "default" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12001,7 +12007,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12022,7 +12028,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12043,7 +12049,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12064,7 +12070,7 @@ unspecified value
 ` "" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12085,7 +12091,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12111,7 +12117,7 @@ list of string
 ` "echo" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -12132,7 +12138,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12153,7 +12159,7 @@ attribute set of (submodule)
 ` { } `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -12174,7 +12180,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12195,7 +12201,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12216,7 +12222,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12237,7 +12243,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12258,7 +12264,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12279,7 +12285,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12300,7 +12306,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12321,7 +12327,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12342,7 +12348,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -12363,7 +12369,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -12384,7 +12390,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12405,7 +12411,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -12426,7 +12432,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -12447,7 +12453,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12468,7 +12474,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12490,7 +12496,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -12511,7 +12517,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -12532,7 +12538,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -12553,7 +12559,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12574,7 +12580,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12595,7 +12601,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12616,7 +12622,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12637,7 +12643,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12658,7 +12664,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12679,7 +12685,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12700,7 +12706,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12721,7 +12727,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12742,7 +12748,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12763,7 +12769,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12784,7 +12790,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -12805,7 +12811,7 @@ list of (null or package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -12826,7 +12832,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -12847,7 +12853,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -12873,7 +12879,7 @@ list of unspecified value
 ```
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -12892,7 +12898,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -12913,7 +12919,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -12934,7 +12940,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -12955,7 +12961,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12976,7 +12982,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -12997,7 +13003,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -13018,7 +13024,7 @@ list of (null or package or list of package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -13039,7 +13045,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -13060,7 +13066,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -13081,7 +13087,7 @@ list of list of package
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -13102,7 +13108,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -13123,7 +13129,7 @@ null or (list of unspecified value)
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -13144,7 +13150,7 @@ list of (submodule)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -13165,7 +13171,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -13181,7 +13187,7 @@ This option has no description\.
 unspecified value
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -13197,7 +13203,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -13218,7 +13224,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -13239,7 +13245,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -13260,7 +13266,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -13281,7 +13287,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -13302,7 +13308,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -13323,7 +13329,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -13344,7 +13350,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -13365,7 +13371,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -13386,7 +13392,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -13407,7 +13413,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -13428,7 +13434,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -13449,7 +13455,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -13470,7 +13476,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -13491,7 +13497,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -13512,7 +13518,7 @@ null or strings concatenated with “\\n”
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -13533,7 +13539,7 @@ null or string
 ` "default" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -13554,7 +13560,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -13575,7 +13581,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -13596,7 +13602,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -13617,7 +13623,7 @@ unspecified value
 ` "" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -13638,7 +13644,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -13664,7 +13670,7 @@ list of string
 ` "echo" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -13685,7 +13691,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -13706,7 +13712,7 @@ attribute set of (submodule)
 ` { } `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -13727,7 +13733,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -13748,7 +13754,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -13769,7 +13775,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -13790,7 +13796,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -13811,7 +13817,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -13832,7 +13838,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -13853,7 +13859,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -13874,7 +13880,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -13895,7 +13901,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -13916,7 +13922,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -13937,7 +13943,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -13958,7 +13964,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -13979,7 +13985,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -14000,7 +14006,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -14021,7 +14027,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -14043,7 +14049,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -14064,7 +14070,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -14085,7 +14091,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -14106,7 +14112,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -14127,7 +14133,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -14148,7 +14154,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -14169,7 +14175,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -14190,7 +14196,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -14211,7 +14217,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -14232,7 +14238,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -14253,7 +14259,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -14274,7 +14280,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -14295,7 +14301,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -14316,7 +14322,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -14337,7 +14343,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -14358,7 +14364,7 @@ list of (null or package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -14379,7 +14385,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -14400,7 +14406,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -14426,7 +14432,7 @@ list of unspecified value
 ```
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -14447,7 +14453,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -14468,7 +14474,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -14489,7 +14495,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -14510,7 +14516,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -14531,7 +14537,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -14552,7 +14558,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -14573,7 +14579,7 @@ list of (null or package or list of package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -14594,7 +14600,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -14615,7 +14621,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -14636,7 +14642,7 @@ list of list of package
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -14657,7 +14663,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -14678,7 +14684,7 @@ null or (list of unspecified value)
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -14699,7 +14705,7 @@ list of (submodule)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -14720,7 +14726,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -14736,7 +14742,7 @@ This option has no description\.
 unspecified value
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -14752,7 +14758,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -14773,7 +14779,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -14794,7 +14800,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -14815,7 +14821,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -14836,7 +14842,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -14857,7 +14863,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -14878,7 +14884,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -14899,7 +14905,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -14920,7 +14926,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
 
 
 
@@ -14941,7 +14947,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -14962,7 +14968,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -14981,7 +14987,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -15002,7 +15008,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -15023,7 +15029,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -15044,7 +15050,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -15065,7 +15071,7 @@ null or strings concatenated with “\\n”
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -15086,7 +15092,7 @@ null or string
 ` "default" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -15107,7 +15113,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -15128,7 +15134,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -15149,7 +15155,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -15170,7 +15176,7 @@ unspecified value
 ` "" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -15191,7 +15197,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -15217,7 +15223,7 @@ list of string
 ` "echo" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -15238,7 +15244,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -15259,7 +15265,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -15280,7 +15286,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -15302,7 +15308,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -15323,7 +15329,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -15344,7 +15350,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -15365,7 +15371,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -15386,7 +15392,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -15407,7 +15413,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -15428,7 +15434,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -15449,7 +15455,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -15470,7 +15476,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -15491,7 +15497,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -15512,7 +15518,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -15533,7 +15539,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -15549,7 +15555,7 @@ This option has no description\.
 attribute set of boolean
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -15570,7 +15576,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -15591,7 +15597,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -15612,7 +15618,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -15633,7 +15639,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -15654,7 +15660,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -15675,7 +15681,7 @@ string
 ` "\${config.package.identifier.name}-\${config.package.identifier.version}" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -15696,7 +15702,7 @@ list of (unspecified value or absolute path)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -15717,7 +15723,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -15738,7 +15744,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -15759,7 +15765,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -15780,7 +15786,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -15801,7 +15807,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -15822,7 +15828,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -15843,7 +15849,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -15864,7 +15870,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -15885,7 +15891,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -15906,7 +15912,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -15927,7 +15933,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -15948,7 +15954,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -15969,7 +15975,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -15990,7 +15996,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -16011,7 +16017,7 @@ null or strings concatenated with “\\n”
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -16032,7 +16038,7 @@ null or string
 ` "default" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -16053,7 +16059,7 @@ null or signed integer
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -16074,7 +16080,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -16095,7 +16101,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -16116,7 +16122,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -16137,7 +16143,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -16158,7 +16164,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -16179,7 +16185,7 @@ unspecified value
 ` "" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -16208,7 +16214,7 @@ null or absolute path or package
 ```
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
 
 
 
@@ -16229,7 +16235,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -16255,7 +16261,7 @@ list of string
 ` "echo" `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/package-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
 
 
 
@@ -16276,7 +16282,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options\.nix](file:///nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source/modules/component-options.nix)
+ - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
 
 
 
@@ -16297,7 +16303,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16313,7 +16319,7 @@ This option has no description\.
 unspecified value
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16329,7 +16335,7 @@ This option has no description\.
 unspecified value
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16345,7 +16351,7 @@ This option has no description\.
 attribute set of string
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16361,7 +16367,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16377,7 +16383,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16398,7 +16404,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16419,7 +16425,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16441,7 +16447,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16462,7 +16468,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16483,7 +16489,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16504,7 +16510,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16525,7 +16531,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16546,7 +16552,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16567,7 +16573,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16588,7 +16594,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16609,7 +16615,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16630,7 +16636,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16651,7 +16657,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16672,7 +16678,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16693,7 +16699,7 @@ unspecified value
 ` "pkgs.pkgsBuildBuild" `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16714,7 +16720,7 @@ package
 ` "pkgs.buildPackages.haskell-nix.compiler.\${config.compiler.nix-name}" `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16735,7 +16741,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16751,7 +16757,7 @@ This option has no description\.
 unspecified value
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16767,7 +16773,7 @@ This option has no description\.
 unspecified value
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16788,7 +16794,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16809,7 +16815,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16830,7 +16836,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16851,7 +16857,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16867,7 +16873,7 @@ This option has no description\.
 attribute set of unspecified value
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16888,7 +16894,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16909,7 +16915,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16928,7 +16934,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16949,7 +16955,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16970,7 +16976,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -16991,7 +16997,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17012,7 +17018,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17033,7 +17039,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17054,7 +17060,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17075,7 +17081,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17096,7 +17102,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17117,7 +17123,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17138,7 +17144,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17159,7 +17165,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17180,7 +17186,7 @@ null or strings concatenated with “\\n”
 ` null `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17201,7 +17207,7 @@ null or string
 ` "default" `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17222,7 +17228,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17243,7 +17249,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17264,7 +17270,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17285,7 +17291,7 @@ unspecified value
 ` "" `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17306,7 +17312,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17332,7 +17338,7 @@ list of string
 ` "echo" `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17353,7 +17359,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17374,7 +17380,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17392,10 +17398,10 @@ null or string
 
 
 *Default:*
-` "rvwagnlr26byfwx6rpm12a636j8z3yh2-source" `
+` "qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source" `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17416,7 +17422,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17434,10 +17440,10 @@ absolute path
 
 
 *Default:*
-` /nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/pins/haskell.nix `
+` /nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/pins/haskell.nix `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/pins\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/pins.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/pins\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/pins.nix)
 
 
 
@@ -17455,10 +17461,10 @@ absolute path
 
 
 *Default:*
-` /nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/deps/nix-thunk `
+` /nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/deps/nix-thunk `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/pins\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/pins.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/pins\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/pins.nix)
 
 
 
@@ -17476,10 +17482,10 @@ absolute path
 
 
 *Default:*
-` /nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/pins/nixpkgs `
+` /nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/pins/nixpkgs `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/pins\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/pins.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/pins\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/pins.nix)
 
 
 
@@ -17497,10 +17503,10 @@ absolute path
 
 
 *Default:*
-` /nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/pins/reflex-platform `
+` /nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/pins/reflex-platform `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/pins\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/pins.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/pins\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/pins.nix)
 
 
 
@@ -17508,7 +17514,7 @@ absolute path
 
 
 
-This option has no description\.
+Extra package definition functions to pass to haskell\.nix\.
 
 
 
@@ -17521,7 +17527,7 @@ null or (list of unspecified value)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17554,7 +17560,7 @@ null or (attribute set of (string or attribute set of string))
 ```
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17570,7 +17576,7 @@ This option has no description\.
 submodule
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17591,7 +17597,7 @@ unspecified value
 ` false `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17612,7 +17618,7 @@ unspecified value
 ` true `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17646,7 +17652,7 @@ ps: with ps; [
 ````
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17667,7 +17673,7 @@ unspecified value
 ` <function> `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17691,7 +17697,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17712,7 +17718,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17733,7 +17739,7 @@ unspecified value
 ` <function> `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17757,7 +17763,7 @@ ps: []
 ```
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17778,7 +17784,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17799,7 +17805,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17820,7 +17826,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17841,7 +17847,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17862,7 +17868,7 @@ attribute set of unspecified value
 ` { } `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17883,7 +17889,7 @@ string
 ` "" `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17904,7 +17910,7 @@ attribute set of unspecified value
 ` { } `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17925,7 +17931,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17946,7 +17952,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -17985,7 +17991,7 @@ attribute set of (absolute path or (attribute set))
 ```
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -18009,7 +18015,7 @@ attribute set *(read only)*
 ```
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -18030,7 +18036,7 @@ absolute path or package
 ` "./." `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -18060,7 +18066,7 @@ absolute path *(read only)*
 ```
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/common.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
 
 
 
@@ -18086,7 +18092,7 @@ string
 ```
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/pins\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/pins.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/pins\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/pins.nix)
 
 
 
@@ -18104,10 +18110,10 @@ absolute path
 
 
 *Default:*
-` "/nix/store/1hsnj2r15pz12fazfr20bymfcacsxliz-source" `
+` "/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source" `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/thunks\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/thunks.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/thunks\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/thunks.nix)
 
 
 
@@ -18128,7 +18134,7 @@ absolute path
 ` "/nix/store/k7h3v8dwgg8l6r0fhjqqffw1bd7nphf8-source" `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/thunks\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/thunks.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/thunks\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/thunks.nix)
 
 
 
@@ -18149,7 +18155,7 @@ absolute path
 ` "/nix/store/ws6jqxhhvy2nzjqmp7h8a1546ygrsfk6-source" `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/thunks\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/thunks.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/thunks\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/thunks.nix)
 
 
 
@@ -18170,6 +18176,6 @@ absolute path
 ` "/nix/store/54l1ygi957zdd4943lpwzdpw2cxy8brr-source" `
 
 *Declared by:*
- - [/nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/thunks\.nix](file:///nix/store/rvwagnlr26byfwx6rpm12a636j8z3yh2-source/modules/thunks.nix)
+ - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/thunks\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/thunks.nix)
 
 

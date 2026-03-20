@@ -59,10 +59,7 @@ let eval = x: pkgs.lib.evalModules {
       let mkProject = x:
             let config = (eval x).config;
                 proj = config.haskell-nix.project;
-                projOrShell = if !pkgs.lib.inNixShell
-                  then proj
-                  else proj.shell;
-            in projOrShell // {
+            in proj // {
               inherit config;
               override = y: mkProject (inputs: recursiveMerge (x inputs) (y inputs));
             };

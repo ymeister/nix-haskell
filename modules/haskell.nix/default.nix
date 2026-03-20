@@ -92,7 +92,11 @@ with lib;
                     in the `inputMap`.
                   '';
                 };
-                config = intersectAttrs options config;
+                config =
+                  let c = intersectAttrs options config;
+                  in c // optionalAttrs (c ? shell) {
+                    shell = builtins.removeAttrs c.shell [ "shellHook" ];
+                  };
               }
             )
           ];
@@ -100,7 +104,13 @@ with lib;
       };
 
       project = mkOption {
-        default = config.haskell-nix.haskell-nix.project config.haskell-nix.options;
+        default =
+          let p = config.haskell-nix.haskell-nix.project config.haskell-nix.options;
+          in p // {
+            shell = p.shell.overrideAttrs (old: {
+              shellHook = old.shellHook + (config.shell.shellHook or "");
+            });
+          };
         defaultText = literalMD ''
           ```
           config.haskell-nix.haskell-nix.project config.haskell-nix.options

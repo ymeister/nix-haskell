@@ -56,7 +56,7 @@
     inherit modules;
     buildCommands = genBuildCommands defs;
     generatedHackage = genHackageForNix extra-hackage-tarballs.overlay;
-    package-overlays = map (a: { packages.${a.name}.src = a.src; }) (defs);
+    package-overlays = map (a: { packages.${a.name}.src = pkgs.lib.mkForce a.src; }) (defs);
     extra-hackage-tarballs = {
       overlay = (writePackageDefs buildCommands).out;
     };

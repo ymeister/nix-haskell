@@ -9,7 +9,33 @@
 
 { config, lib, pkgs, ... }:
 
-{
+let crossPlatformSet = lib.genAttrs (builtins.attrNames pkgs.pkgsCross) (name: name);
+    selectedCrossPlatforms = config.shell.crossPlatforms crossPlatformSet;
+    targetPrefixes = lib.filter (p: p != "") (map (name:
+      pkgs.pkgsCross.${name}.stdenv.hostPlatform.config
+    ) selectedCrossPlatforms);
+
+    # Generate a bash function that filters -L flags from NIX_LDFLAGS.
+    # When keep=true, only matching paths are kept (for cross builds).
+    # When keep=false, matching paths are removed (for native builds).
+    mkFilterLdflags = name: pattern: keep: ''
+      ${name}() {
+        local result=""
+        for arg in $1; do
+          if [[ "$arg" == -L* ]]; then
+            case "$arg" in
+              ${pattern}) ${if keep then ''result="$result $arg"'' else ""} ;;
+              *) ${if keep then "" else ''result="$result $arg"''} ;;
+            esac
+          else
+            result="$result $arg"
+          fi
+        done
+        echo "$result"
+      }
+    '';
+
+in {
 
   # Platform-specific cross-compilation support modules
   imports = [
@@ -63,23 +89,27 @@
                   # paths. Passing native shared objects (e.g., native
                   # libffi.so) to the cross-linker causes "unknown file
                   # type" errors.
-                  _filter_ldflags() {
-                    local result=""
-                    for arg in $1; do
-                      if [[ "$arg" == -L* ]]; then
-                        [[ "$arg" == *wasm* || "$arg" == *${targetPrefix}* ]] && result="$result $arg"
-                      else
-                        result="$result $arg"
-                      fi
-                    done
-                    echo "$result"
-                  }
-                  export NIX_LDFLAGS="$(_filter_ldflags "$NIX_LDFLAGS")"
-                  export NIX_LDFLAGS_FOR_TARGET="$(_filter_ldflags "$NIX_LDFLAGS_FOR_TARGET")"
+                  ${mkFilterLdflags "_filter_ldflags" "*wasm*|*${targetPrefix}*" true}
+                  export NIX_LDFLAGS="$(_filter_ldflags "${"\${NIX_LDFLAGS_UNFILTERED:-$NIX_LDFLAGS}"}")"
+                  export NIX_LDFLAGS_FOR_TARGET="$(_filter_ldflags "${"\${NIX_LDFLAGS_FOR_TARGET_UNFILTERED:-$NIX_LDFLAGS_FOR_TARGET}"}")"
                   PATH="${ghcWrapper}/bin:$PATH" exec "$@"
                 ''
               );
 
     in builtins.concatMap mkWrapper crossPlatforms;
+
+  # Filter cross-target library paths from NIX_LDFLAGS for native builds.
+  # This is the inverse of _filter_ldflags in the wrapper scripts above:
+  # wrappers keep only cross-target paths; here we remove them.
+  shell.shellHook =
+    let prefixPattern = lib.concatMapStringsSep "|" (p: "*${p}*") targetPrefixes;
+    in ''
+      ${mkFilterLdflags "_filter_native_ldflags" "*wasm*|${prefixPattern}" false}
+
+      export NIX_LDFLAGS_UNFILTERED="$NIX_LDFLAGS"
+      export NIX_LDFLAGS_FOR_TARGET_UNFILTERED="$NIX_LDFLAGS_FOR_TARGET"
+      export NIX_LDFLAGS="$(_filter_native_ldflags "$NIX_LDFLAGS")"
+      export NIX_LDFLAGS_FOR_TARGET="$(_filter_native_ldflags "$NIX_LDFLAGS_FOR_TARGET")"
+    '';
 
 }

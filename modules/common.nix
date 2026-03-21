@@ -162,7 +162,7 @@ with lib;
                 packages = mkOption {
                   type = types.unspecified;
                   default = _: [];
-                  apply = x: ps: concatMap (p: if (! builtins.isString p) then [ p ] else optional (builtins.hasAttr p ps) ps."${p}") (x ps);
+                  apply = x: ps: concatMap (p: if (! builtins.isString p) then [ p ] else let v = ps.${p} or null; in optional (v != null) v) (x ps);
                   description = ''
                     Package selection function. It takes a list of Haskell packages and returns a subset of these packages with all of their dependencies included in `ghc-pkg list`.
                     It can take either a `package` or name (`string`) of a package which availability can depend on the platform.

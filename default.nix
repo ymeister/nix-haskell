@@ -6,45 +6,13 @@ with pkgs.lib;
 
 module:
 
-let eval = x: pkgs.lib.evalModules {
-      modules = [
-        ./modules
-
-        {
-          config.system = mkDefault system;
-          config.importing.nixpkgs = mkDefault pkgs;
-        }
-        ({ config, ... }: {
-          _module.args.system = mkDefault config.system;
-          _module.args.pkgs = mkDefault config.importing.nixpkgs;
-        })
-
-        x
-      ];
-
-      specialArgs = {
-        nix-haskell-modules = ./modules;
-        nix-haskell-patches = ./modules/patches;
-      };
-    };
+let eval = import ./eval.nix { inherit system pkgs; };
 
     evaluated = eval module;
     config = evaluated.config;
     options = evaluated.options;
 
-    optionsDoc = pkgs.nixosOptionsDoc {
-      inherit options;
-      warningsAreErrors = false;
-    };
-    optionsDocMD = pkgs.runCommand "options-doc.md" {} ''
-      cat ${optionsDoc.optionsCommonMark} >> $out
-    '';
-    optionsDocMan = pkgs.runCommand "options-doc.man" {} ''
-      ${pkgs.pandoc}/bin/pandoc --standalone --to man ${optionsDocMD} -o $out
-    '';
-    viewManual = pkgs.writeShellScriptBin "manual" ''
-      ${pkgs.man}/bin/man ${optionsDocMan}
-    '';
+    docs = import ./docs.nix { inherit pkgs options; };
 
     recursiveMerge = lhs: rhs:
       zipAttrsWith (name: values:
@@ -77,9 +45,5 @@ in {
     haskell-nix = haskell-nix.project;
   };
 
-  manual = {
-    man = optionsDocMan;
-    md = optionsDocMD;
-    view = viewManual;
-  };
+  manual = docs;
 }

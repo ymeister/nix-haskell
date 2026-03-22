@@ -83,7 +83,7 @@ string
 ` "ghc884" `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -104,7 +104,7 @@ null or (attribute set)
 ` { } `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -125,7 +125,7 @@ null or (list of unspecified value)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -146,7 +146,7 @@ list of strings concatenated with “\\n”
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -167,7 +167,7 @@ attribute set
 ` { } `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -195,7 +195,7 @@ attribute set *(read only)*
 ```
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -240,7 +240,7 @@ list of (attribute set)
 ```
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -264,7 +264,7 @@ config."haskell-nix".nixpkgs.haskell-nix
 ```
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -288,7 +288,7 @@ config."haskell-nix".haskell-nix.haskellLib
 ```
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -312,7 +312,7 @@ import config."haskell-nix".nixpkgsSource ({ inherit system; } // config."haskel
 ```
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -336,7 +336,7 @@ config.importing."haskell-nix".nixpkgsArgs
 ```
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -360,7 +360,7 @@ config.importing."haskell-nix".sources.nixpkgs-unstable
 ```
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -381,7 +381,7 @@ submodule
 ` { } `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -402,7 +402,7 @@ null or strings concatenated with “\\n”
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -423,7 +423,7 @@ string
 ` "cabal.project" `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -444,7 +444,7 @@ null or strings concatenated with “\\n”
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -465,7 +465,7 @@ null or strings concatenated with “\\n”
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -486,7 +486,7 @@ null or boolean
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -502,7 +502,7 @@ The name of the ghc compiler to use eg\. “ghc884”
 string
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -523,7 +523,7 @@ unspecified value
 ` <function> `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -548,7 +548,7 @@ null or strings concatenated with " "
 ` "" `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -569,7 +569,7 @@ unspecified value
 ` <function> `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -608,7 +608,7 @@ else
 ```
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -632,10 +632,10 @@ absolute path or package
 
 
 *Default:*
-` /nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source `
+` <nix-haskell> `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -660,7 +660,7 @@ string
 ` "x86_64-linux" `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -681,7 +681,7 @@ null or (attribute set)
 ` { } `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -702,7 +702,7 @@ null or (list of unspecified value)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -723,7 +723,7 @@ submodule
 ` { } `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -744,7 +744,7 @@ unspecified value
 ` <function> `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -767,7 +767,7 @@ unspecified value
 ` { } `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -788,7 +788,7 @@ unspecified value
 ` <function> `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -810,7 +810,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -844,7 +844,7 @@ attribute set of unspecified value
 ` { } `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -865,7 +865,7 @@ null or package
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -886,7 +886,7 @@ null or package
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -902,7 +902,7 @@ This option has no description\.
 unspecified value
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -923,7 +923,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -944,7 +944,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -965,7 +965,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -991,7 +991,7 @@ null or (attribute set)
 ` { } `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1012,7 +1012,7 @@ null or absolute path or package
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1033,7 +1033,7 @@ null or (list of unspecified value)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1054,7 +1054,7 @@ null or string
 ` "haskell-project" `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1075,7 +1075,7 @@ null or package
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1096,7 +1096,7 @@ null or (list of unspecified value)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1117,7 +1117,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1140,7 +1140,7 @@ list of package
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1161,7 +1161,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1193,7 +1193,7 @@ null or (attribute set of (string or attribute set of string))
 ```
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1216,7 +1216,7 @@ submodule
 ` { } `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1237,7 +1237,7 @@ unspecified value
 ` false `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1258,7 +1258,7 @@ unspecified value
 ` true `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1279,7 +1279,7 @@ unspecified value
 ` <function> `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1300,7 +1300,7 @@ unspecified value
 ` <function> `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1324,7 +1324,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1345,7 +1345,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1366,7 +1366,7 @@ unspecified value
 ` <function> `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1387,7 +1387,7 @@ unspecified value
 ` <function> `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1408,7 +1408,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1429,7 +1429,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1450,7 +1450,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1471,7 +1471,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1492,7 +1492,7 @@ attribute set of unspecified value
 ` { } `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1513,7 +1513,7 @@ string
 ` "" `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1534,7 +1534,7 @@ attribute set of unspecified value
 ` { } `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1555,7 +1555,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1576,7 +1576,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1597,7 +1597,7 @@ attribute set of function that evaluates to a(n) (attribute set)
 ` { } `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1613,7 +1613,7 @@ This option has no description\.
 absolute path or package
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1634,7 +1634,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1658,7 +1658,7 @@ config.haskell-nix.haskell-nix.project config.haskell-nix.options
 ```
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/haskell.nix)
+ - [<nix-haskell>/modules/haskell\.nix](file://<nix-haskell>/modules/haskell.nix)
 
 
 
@@ -1682,7 +1682,7 @@ import config.thunks."haskell-nix" { inherit system; }
 ```
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/importing\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/importing.nix)
+ - [<nix-haskell>/modules/importing\.nix](file://<nix-haskell>/modules/importing.nix)
 
 
 
@@ -1708,7 +1708,7 @@ import config.thunks."nix-thunk" {
 ```
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/importing\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/importing.nix)
+ - [<nix-haskell>/modules/importing\.nix](file://<nix-haskell>/modules/importing.nix)
 
 
 
@@ -1732,7 +1732,7 @@ import config.thunks."nixpkgs" { inherit system; }
 ```
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/importing\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/importing.nix)
+ - [<nix-haskell>/modules/importing\.nix](file://<nix-haskell>/modules/importing.nix)
 
 
 
@@ -1759,7 +1759,7 @@ import config.thunks."reflex-platform" {
 ```
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/importing\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/importing.nix)
+ - [<nix-haskell>/modules/importing\.nix](file://<nix-haskell>/modules/importing.nix)
 
 
 
@@ -1785,7 +1785,7 @@ null or string
 ` "2019-10-10T00:00:00Z" `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -1818,7 +1818,7 @@ attribute set
 ```
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -1853,7 +1853,7 @@ boolean
 ```
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/cross/ghcjs](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/cross/ghcjs)
+ - [<nix-haskell>/modules/cross/ghcjs](file://<nix-haskell>/modules/cross/ghcjs)
 
 
 
@@ -1874,7 +1874,7 @@ list of (submodule) *(read only)*
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -1893,7 +1893,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -1914,7 +1914,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -1935,7 +1935,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -1956,7 +1956,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -1977,7 +1977,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -1998,7 +1998,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -2019,7 +2019,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -2040,7 +2040,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -2061,7 +2061,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -2077,7 +2077,7 @@ This option has no description\.
 attribute set of (submodule)
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -2098,7 +2098,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -2119,7 +2119,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -2140,7 +2140,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -2161,7 +2161,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -2182,7 +2182,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -2203,7 +2203,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -2224,7 +2224,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -2245,7 +2245,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -2261,7 +2261,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2277,7 +2277,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2298,7 +2298,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2319,7 +2319,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2335,7 +2335,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2356,7 +2356,7 @@ string
 ` "" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2377,7 +2377,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2393,7 +2393,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2414,7 +2414,7 @@ string
 ` "MinimalDetails" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2435,7 +2435,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2456,7 +2456,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2477,7 +2477,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2493,7 +2493,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2514,7 +2514,7 @@ string
 ` "\${config.package.identifier.name}-\${config.package.identifier.version}" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2530,7 +2530,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2546,7 +2546,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2567,7 +2567,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2588,7 +2588,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2609,7 +2609,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2625,7 +2625,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2646,7 +2646,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2662,7 +2662,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2683,7 +2683,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2699,7 +2699,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2720,7 +2720,7 @@ string
 ` "" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2736,7 +2736,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2757,7 +2757,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2773,7 +2773,7 @@ The merged dependencies of all other components
 submodule
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -2794,7 +2794,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -2815,7 +2815,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -2836,7 +2836,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -2857,7 +2857,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -2878,7 +2878,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -2899,7 +2899,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -2920,7 +2920,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -2941,7 +2941,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -2962,7 +2962,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -2983,7 +2983,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -3004,7 +3004,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -3025,7 +3025,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -3046,7 +3046,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -3067,7 +3067,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -3088,7 +3088,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -3110,7 +3110,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -3131,7 +3131,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -3152,7 +3152,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -3173,7 +3173,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -3194,7 +3194,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -3215,7 +3215,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -3236,7 +3236,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -3257,7 +3257,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -3278,7 +3278,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -3299,7 +3299,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -3320,7 +3320,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -3341,7 +3341,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -3362,7 +3362,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -3383,7 +3383,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -3404,7 +3404,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -3425,7 +3425,7 @@ list of (null or package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -3446,7 +3446,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -3467,7 +3467,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -3493,7 +3493,7 @@ list of unspecified value
 ```
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -3514,7 +3514,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -3535,7 +3535,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -3556,7 +3556,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -3577,7 +3577,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -3598,7 +3598,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -3619,7 +3619,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -3640,7 +3640,7 @@ list of (null or package or list of package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -3661,7 +3661,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -3682,7 +3682,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -3703,7 +3703,7 @@ list of list of package
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -3724,7 +3724,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -3745,7 +3745,7 @@ null or (list of unspecified value)
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -3766,7 +3766,7 @@ list of (submodule)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -3787,7 +3787,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -3803,7 +3803,7 @@ This option has no description\.
 unspecified value
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -3819,7 +3819,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -3840,7 +3840,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -3861,7 +3861,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -3882,7 +3882,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -3903,7 +3903,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -3924,7 +3924,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -3945,7 +3945,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -3966,7 +3966,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -3987,7 +3987,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -4008,7 +4008,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -4029,7 +4029,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -4050,7 +4050,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -4071,7 +4071,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -4092,7 +4092,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -4113,7 +4113,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -4134,7 +4134,7 @@ null or strings concatenated with “\\n”
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -4155,7 +4155,7 @@ null or string
 ` "default" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4176,7 +4176,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4197,7 +4197,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4218,7 +4218,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4239,7 +4239,7 @@ unspecified value
 ` "" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4260,7 +4260,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4286,7 +4286,7 @@ list of string
 ` "echo" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -4307,7 +4307,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4328,7 +4328,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4349,7 +4349,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -4370,7 +4370,7 @@ attribute set of (submodule)
 ` { } `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -4391,7 +4391,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4412,7 +4412,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4433,7 +4433,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4454,7 +4454,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4475,7 +4475,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4496,7 +4496,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4517,7 +4517,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4538,7 +4538,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4559,7 +4559,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -4580,7 +4580,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -4601,7 +4601,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4622,7 +4622,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -4641,7 +4641,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -4662,7 +4662,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4683,7 +4683,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4705,7 +4705,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -4726,7 +4726,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -4747,7 +4747,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -4768,7 +4768,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4789,7 +4789,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4810,7 +4810,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4831,7 +4831,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4852,7 +4852,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4873,7 +4873,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4894,7 +4894,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4915,7 +4915,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4936,7 +4936,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4957,7 +4957,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4978,7 +4978,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -4999,7 +4999,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -5020,7 +5020,7 @@ list of (null or package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -5041,7 +5041,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -5062,7 +5062,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -5088,7 +5088,7 @@ list of unspecified value
 ```
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -5109,7 +5109,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -5130,7 +5130,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -5151,7 +5151,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -5172,7 +5172,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -5193,7 +5193,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -5214,7 +5214,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -5235,7 +5235,7 @@ list of (null or package or list of package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -5256,7 +5256,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -5277,7 +5277,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -5298,7 +5298,7 @@ list of list of package
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -5319,7 +5319,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -5340,7 +5340,7 @@ null or (list of unspecified value)
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -5361,7 +5361,7 @@ list of (submodule)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -5382,7 +5382,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -5398,7 +5398,7 @@ This option has no description\.
 unspecified value
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -5414,7 +5414,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -5435,7 +5435,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -5456,7 +5456,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -5477,7 +5477,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -5498,7 +5498,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -5519,7 +5519,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -5540,7 +5540,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -5561,7 +5561,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -5582,7 +5582,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -5603,7 +5603,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -5624,7 +5624,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -5645,7 +5645,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -5666,7 +5666,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -5687,7 +5687,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -5708,7 +5708,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -5729,7 +5729,7 @@ null or strings concatenated with “\\n”
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -5750,7 +5750,7 @@ null or string
 ` "default" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -5771,7 +5771,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -5792,7 +5792,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -5813,7 +5813,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -5834,7 +5834,7 @@ unspecified value
 ` "" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -5855,7 +5855,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -5881,7 +5881,7 @@ list of string
 ` "echo" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -5902,7 +5902,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -5923,7 +5923,7 @@ attribute set of (submodule)
 ` { } `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -5944,7 +5944,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -5965,7 +5965,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -5986,7 +5986,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -6007,7 +6007,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -6028,7 +6028,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -6049,7 +6049,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -6070,7 +6070,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -6091,7 +6091,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -6112,7 +6112,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -6133,7 +6133,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -6154,7 +6154,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -6175,7 +6175,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -6196,7 +6196,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -6217,7 +6217,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -6238,7 +6238,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -6260,7 +6260,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -6281,7 +6281,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -6302,7 +6302,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -6323,7 +6323,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -6344,7 +6344,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -6365,7 +6365,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -6386,7 +6386,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -6407,7 +6407,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -6428,7 +6428,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -6449,7 +6449,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -6470,7 +6470,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -6491,7 +6491,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -6512,7 +6512,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -6533,7 +6533,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -6554,7 +6554,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -6573,7 +6573,7 @@ list of (null or package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -6594,7 +6594,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -6615,7 +6615,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -6641,7 +6641,7 @@ list of unspecified value
 ```
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -6662,7 +6662,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -6683,7 +6683,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -6704,7 +6704,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -6725,7 +6725,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -6746,7 +6746,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -6767,7 +6767,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -6788,7 +6788,7 @@ list of (null or package or list of package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -6809,7 +6809,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -6830,7 +6830,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -6851,7 +6851,7 @@ list of list of package
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -6872,7 +6872,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -6893,7 +6893,7 @@ null or (list of unspecified value)
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -6914,7 +6914,7 @@ list of (submodule)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -6935,7 +6935,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -6951,7 +6951,7 @@ This option has no description\.
 unspecified value
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -6967,7 +6967,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -6988,7 +6988,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -7009,7 +7009,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -7030,7 +7030,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -7051,7 +7051,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -7072,7 +7072,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -7093,7 +7093,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -7114,7 +7114,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -7135,7 +7135,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -7156,7 +7156,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -7177,7 +7177,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -7198,7 +7198,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -7219,7 +7219,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -7240,7 +7240,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -7261,7 +7261,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -7282,7 +7282,7 @@ null or strings concatenated with “\\n”
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -7303,7 +7303,7 @@ null or string
 ` "default" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -7324,7 +7324,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -7345,7 +7345,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -7366,7 +7366,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -7387,7 +7387,7 @@ unspecified value
 ` "" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -7408,7 +7408,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -7434,7 +7434,7 @@ list of string
 ` "echo" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -7455,7 +7455,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -7476,7 +7476,7 @@ attribute set of (submodule)
 ` { } `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -7497,7 +7497,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -7518,7 +7518,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -7539,7 +7539,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -7560,7 +7560,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -7581,7 +7581,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -7602,7 +7602,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -7623,7 +7623,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -7644,7 +7644,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -7665,7 +7665,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -7686,7 +7686,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -7707,7 +7707,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -7728,7 +7728,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -7749,7 +7749,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -7770,7 +7770,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -7791,7 +7791,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -7813,7 +7813,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -7834,7 +7834,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -7855,7 +7855,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -7876,7 +7876,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -7897,7 +7897,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -7918,7 +7918,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -7939,7 +7939,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -7960,7 +7960,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -7981,7 +7981,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -8002,7 +8002,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -8023,7 +8023,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -8044,7 +8044,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -8065,7 +8065,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -8086,7 +8086,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -8107,7 +8107,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -8128,7 +8128,7 @@ list of (null or package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -8149,7 +8149,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -8170,7 +8170,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -8196,7 +8196,7 @@ list of unspecified value
 ```
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -8217,7 +8217,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -8238,7 +8238,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -8259,7 +8259,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -8280,7 +8280,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -8301,7 +8301,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -8322,7 +8322,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -8343,7 +8343,7 @@ list of (null or package or list of package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -8364,7 +8364,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -8385,7 +8385,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -8406,7 +8406,7 @@ list of list of package
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -8427,7 +8427,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -8448,7 +8448,7 @@ null or (list of unspecified value)
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -8469,7 +8469,7 @@ list of (submodule)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -8490,7 +8490,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -8506,7 +8506,7 @@ This option has no description\.
 unspecified value
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -8522,7 +8522,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -8543,7 +8543,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -8564,7 +8564,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -8585,7 +8585,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -8606,7 +8606,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -8627,7 +8627,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -8648,7 +8648,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -8667,7 +8667,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -8688,7 +8688,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -8709,7 +8709,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -8730,7 +8730,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -8751,7 +8751,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -8772,7 +8772,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -8793,7 +8793,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -8814,7 +8814,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -8835,7 +8835,7 @@ null or strings concatenated with “\\n”
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -8856,7 +8856,7 @@ null or string
 ` "default" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -8877,7 +8877,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -8898,7 +8898,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -8919,7 +8919,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -8940,7 +8940,7 @@ unspecified value
 ` "" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -8961,7 +8961,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -8987,7 +8987,7 @@ list of string
 ` "echo" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -9008,7 +9008,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -9029,7 +9029,7 @@ null or (submodule)
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -9050,7 +9050,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -9071,7 +9071,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -9092,7 +9092,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -9113,7 +9113,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -9134,7 +9134,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -9155,7 +9155,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -9176,7 +9176,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -9197,7 +9197,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -9218,7 +9218,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -9239,7 +9239,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -9260,7 +9260,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -9281,7 +9281,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -9302,7 +9302,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -9323,7 +9323,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -9344,7 +9344,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -9366,7 +9366,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -9387,7 +9387,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -9408,7 +9408,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -9429,7 +9429,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -9450,7 +9450,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -9471,7 +9471,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -9492,7 +9492,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -9513,7 +9513,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -9534,7 +9534,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -9555,7 +9555,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -9576,7 +9576,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -9597,7 +9597,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -9618,7 +9618,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -9639,7 +9639,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -9660,7 +9660,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -9681,7 +9681,7 @@ list of (null or package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -9702,7 +9702,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -9723,7 +9723,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -9749,7 +9749,7 @@ list of unspecified value
 ```
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -9770,7 +9770,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -9791,7 +9791,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -9812,7 +9812,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -9833,7 +9833,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -9854,7 +9854,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -9875,7 +9875,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -9896,7 +9896,7 @@ list of (null or package or list of package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -9917,7 +9917,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -9938,7 +9938,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -9959,7 +9959,7 @@ list of list of package
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -9980,7 +9980,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -10001,7 +10001,7 @@ null or (list of unspecified value)
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -10022,7 +10022,7 @@ list of (submodule)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -10043,7 +10043,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -10059,7 +10059,7 @@ This option has no description\.
 unspecified value
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -10075,7 +10075,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -10096,7 +10096,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -10117,7 +10117,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -10138,7 +10138,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -10159,7 +10159,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -10180,7 +10180,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -10201,7 +10201,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -10222,7 +10222,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -10243,7 +10243,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -10264,7 +10264,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -10285,7 +10285,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -10306,7 +10306,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -10327,7 +10327,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -10348,7 +10348,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -10369,7 +10369,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -10390,7 +10390,7 @@ null or strings concatenated with “\\n”
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -10411,7 +10411,7 @@ null or string
 ` "default" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -10432,7 +10432,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -10453,7 +10453,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -10474,7 +10474,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -10495,7 +10495,7 @@ unspecified value
 ` "" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -10516,7 +10516,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -10542,7 +10542,7 @@ list of string
 ` "echo" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -10563,7 +10563,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -10606,7 +10606,7 @@ null or (submodule)
 ```
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -10627,7 +10627,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -10648,7 +10648,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -10669,7 +10669,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -10690,7 +10690,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -10711,7 +10711,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -10732,7 +10732,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -10753,7 +10753,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -10774,7 +10774,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -10795,7 +10795,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -10816,7 +10816,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -10837,7 +10837,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -10858,7 +10858,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -10879,7 +10879,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -10900,7 +10900,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -10921,7 +10921,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -10943,7 +10943,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -10962,7 +10962,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -10983,7 +10983,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -11004,7 +11004,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -11025,7 +11025,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -11046,7 +11046,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -11067,7 +11067,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -11088,7 +11088,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -11109,7 +11109,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -11130,7 +11130,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -11151,7 +11151,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -11172,7 +11172,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -11193,7 +11193,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -11214,7 +11214,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -11235,7 +11235,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -11256,7 +11256,7 @@ list of (null or package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -11277,7 +11277,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -11298,7 +11298,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -11324,7 +11324,7 @@ list of unspecified value
 ```
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -11345,7 +11345,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -11366,7 +11366,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -11387,7 +11387,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -11408,7 +11408,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -11429,7 +11429,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -11450,7 +11450,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -11471,7 +11471,7 @@ list of (null or package or list of package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -11492,7 +11492,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -11513,7 +11513,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -11534,7 +11534,7 @@ list of list of package
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -11555,7 +11555,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -11576,7 +11576,7 @@ null or (list of unspecified value)
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -11597,7 +11597,7 @@ list of (submodule)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -11618,7 +11618,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -11634,7 +11634,7 @@ This option has no description\.
 unspecified value
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -11650,7 +11650,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -11671,7 +11671,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -11692,7 +11692,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -11713,7 +11713,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -11734,7 +11734,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -11755,7 +11755,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -11776,7 +11776,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -11797,7 +11797,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -11818,7 +11818,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -11839,7 +11839,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -11860,7 +11860,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -11881,7 +11881,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -11902,7 +11902,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -11923,7 +11923,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -11944,7 +11944,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -11965,7 +11965,7 @@ null or strings concatenated with “\\n”
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -11986,7 +11986,7 @@ null or string
 ` "default" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12007,7 +12007,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12028,7 +12028,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12049,7 +12049,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12070,7 +12070,7 @@ unspecified value
 ` "" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12091,7 +12091,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12117,7 +12117,7 @@ list of string
 ` "echo" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -12138,7 +12138,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12159,7 +12159,7 @@ attribute set of (submodule)
 ` { } `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -12180,7 +12180,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12201,7 +12201,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12222,7 +12222,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12243,7 +12243,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12264,7 +12264,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12285,7 +12285,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12306,7 +12306,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12327,7 +12327,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12348,7 +12348,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -12369,7 +12369,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -12390,7 +12390,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12411,7 +12411,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -12432,7 +12432,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -12453,7 +12453,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12474,7 +12474,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12496,7 +12496,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -12517,7 +12517,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -12538,7 +12538,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -12559,7 +12559,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12580,7 +12580,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12601,7 +12601,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12622,7 +12622,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12643,7 +12643,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12664,7 +12664,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12685,7 +12685,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12706,7 +12706,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12727,7 +12727,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12748,7 +12748,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12769,7 +12769,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12790,7 +12790,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -12811,7 +12811,7 @@ list of (null or package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -12832,7 +12832,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -12853,7 +12853,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -12879,7 +12879,7 @@ list of unspecified value
 ```
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -12898,7 +12898,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -12919,7 +12919,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -12940,7 +12940,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -12961,7 +12961,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -12982,7 +12982,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -13003,7 +13003,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -13024,7 +13024,7 @@ list of (null or package or list of package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -13045,7 +13045,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -13066,7 +13066,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -13087,7 +13087,7 @@ list of list of package
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -13108,7 +13108,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -13129,7 +13129,7 @@ null or (list of unspecified value)
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -13150,7 +13150,7 @@ list of (submodule)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -13171,7 +13171,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -13187,7 +13187,7 @@ This option has no description\.
 unspecified value
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -13203,7 +13203,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -13224,7 +13224,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -13245,7 +13245,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -13266,7 +13266,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -13287,7 +13287,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -13308,7 +13308,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -13329,7 +13329,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -13350,7 +13350,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -13371,7 +13371,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -13392,7 +13392,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -13413,7 +13413,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -13434,7 +13434,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -13455,7 +13455,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -13476,7 +13476,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -13497,7 +13497,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -13518,7 +13518,7 @@ null or strings concatenated with “\\n”
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -13539,7 +13539,7 @@ null or string
 ` "default" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -13560,7 +13560,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -13581,7 +13581,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -13602,7 +13602,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -13623,7 +13623,7 @@ unspecified value
 ` "" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -13644,7 +13644,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -13670,7 +13670,7 @@ list of string
 ` "echo" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -13691,7 +13691,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -13712,7 +13712,7 @@ attribute set of (submodule)
 ` { } `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -13733,7 +13733,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -13754,7 +13754,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -13775,7 +13775,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -13796,7 +13796,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -13817,7 +13817,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -13838,7 +13838,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -13859,7 +13859,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -13880,7 +13880,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -13901,7 +13901,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -13922,7 +13922,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -13943,7 +13943,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -13964,7 +13964,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -13985,7 +13985,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -14006,7 +14006,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -14027,7 +14027,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -14049,7 +14049,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -14070,7 +14070,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -14091,7 +14091,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -14112,7 +14112,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -14133,7 +14133,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -14154,7 +14154,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -14175,7 +14175,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -14196,7 +14196,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -14217,7 +14217,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -14238,7 +14238,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -14259,7 +14259,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -14280,7 +14280,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -14301,7 +14301,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -14322,7 +14322,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -14343,7 +14343,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -14364,7 +14364,7 @@ list of (null or package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -14385,7 +14385,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -14406,7 +14406,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -14432,7 +14432,7 @@ list of unspecified value
 ```
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -14453,7 +14453,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -14474,7 +14474,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -14495,7 +14495,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -14516,7 +14516,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -14537,7 +14537,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -14558,7 +14558,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -14579,7 +14579,7 @@ list of (null or package or list of package)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -14600,7 +14600,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -14621,7 +14621,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -14642,7 +14642,7 @@ list of list of package
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -14663,7 +14663,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -14684,7 +14684,7 @@ null or (list of unspecified value)
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -14705,7 +14705,7 @@ list of (submodule)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -14726,7 +14726,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -14742,7 +14742,7 @@ This option has no description\.
 unspecified value
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -14758,7 +14758,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -14779,7 +14779,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -14800,7 +14800,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -14821,7 +14821,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -14842,7 +14842,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -14863,7 +14863,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -14884,7 +14884,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -14905,7 +14905,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -14926,7 +14926,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component.nix)
+ - [<nix-haskell>/modules/component\.nix](file://<nix-haskell>/modules/component.nix)
 
 
 
@@ -14947,7 +14947,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -14968,7 +14968,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -14987,7 +14987,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -15008,7 +15008,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -15029,7 +15029,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -15050,7 +15050,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -15071,7 +15071,7 @@ null or strings concatenated with “\\n”
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -15092,7 +15092,7 @@ null or string
 ` "default" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -15113,7 +15113,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -15134,7 +15134,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -15155,7 +15155,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -15176,7 +15176,7 @@ unspecified value
 ` "" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -15197,7 +15197,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -15223,7 +15223,7 @@ list of string
 ` "echo" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -15244,7 +15244,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -15265,7 +15265,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -15286,7 +15286,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -15308,7 +15308,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -15329,7 +15329,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -15350,7 +15350,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -15371,7 +15371,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -15392,7 +15392,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -15413,7 +15413,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -15434,7 +15434,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -15455,7 +15455,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -15476,7 +15476,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -15497,7 +15497,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -15518,7 +15518,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -15539,7 +15539,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -15555,7 +15555,7 @@ This option has no description\.
 attribute set of boolean
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -15576,7 +15576,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -15597,7 +15597,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -15618,7 +15618,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -15639,7 +15639,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -15660,7 +15660,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -15681,7 +15681,7 @@ string
 ` "\${config.package.identifier.name}-\${config.package.identifier.version}" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -15702,7 +15702,7 @@ list of (unspecified value or absolute path)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -15723,7 +15723,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -15744,7 +15744,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -15765,7 +15765,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -15786,7 +15786,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -15807,7 +15807,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -15828,7 +15828,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -15849,7 +15849,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -15870,7 +15870,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -15891,7 +15891,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -15912,7 +15912,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -15933,7 +15933,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -15954,7 +15954,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -15975,7 +15975,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -15996,7 +15996,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -16017,7 +16017,7 @@ null or strings concatenated with “\\n”
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -16038,7 +16038,7 @@ null or string
 ` "default" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -16059,7 +16059,7 @@ null or signed integer
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -16080,7 +16080,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -16101,7 +16101,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -16122,7 +16122,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -16143,7 +16143,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -16164,7 +16164,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -16185,7 +16185,7 @@ unspecified value
 ` "" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -16214,7 +16214,7 @@ null or absolute path or package
 ```
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package.nix)
+ - [<nix-haskell>/modules/package\.nix](file://<nix-haskell>/modules/package.nix)
 
 
 
@@ -16235,7 +16235,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -16261,7 +16261,7 @@ list of string
 ` "echo" `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/package-options.nix)
+ - [<nix-haskell>/modules/package-options\.nix](file://<nix-haskell>/modules/package-options.nix)
 
 
 
@@ -16282,7 +16282,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options\.nix](file:///nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source/modules/component-options.nix)
+ - [<nix-haskell>/modules/component-options\.nix](file://<nix-haskell>/modules/component-options.nix)
 
 
 
@@ -16303,7 +16303,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16319,7 +16319,7 @@ This option has no description\.
 unspecified value
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16335,7 +16335,7 @@ This option has no description\.
 unspecified value
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16351,7 +16351,7 @@ This option has no description\.
 attribute set of string
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16367,7 +16367,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16383,7 +16383,7 @@ This option has no description\.
 string
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16404,7 +16404,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16425,7 +16425,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16447,7 +16447,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16468,7 +16468,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16489,7 +16489,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16510,7 +16510,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16531,7 +16531,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16552,7 +16552,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16573,7 +16573,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16594,7 +16594,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16615,7 +16615,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16636,7 +16636,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16657,7 +16657,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16678,7 +16678,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16699,7 +16699,7 @@ unspecified value
 ` "pkgs.pkgsBuildBuild" `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16720,7 +16720,7 @@ package
 ` "pkgs.buildPackages.haskell-nix.compiler.\${config.compiler.nix-name}" `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16741,7 +16741,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16757,7 +16757,7 @@ This option has no description\.
 unspecified value
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16773,7 +16773,7 @@ This option has no description\.
 unspecified value
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16794,7 +16794,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16815,7 +16815,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16836,7 +16836,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16857,7 +16857,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16873,7 +16873,7 @@ This option has no description\.
 attribute set of unspecified value
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16894,7 +16894,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16915,7 +16915,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16934,7 +16934,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16955,7 +16955,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16976,7 +16976,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -16997,7 +16997,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17018,7 +17018,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17039,7 +17039,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17060,7 +17060,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17081,7 +17081,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17102,7 +17102,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17123,7 +17123,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17144,7 +17144,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17165,7 +17165,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17186,7 +17186,7 @@ null or strings concatenated with “\\n”
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17207,7 +17207,7 @@ null or string
 ` "default" `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17228,7 +17228,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17249,7 +17249,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17270,7 +17270,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17291,7 +17291,7 @@ unspecified value
 ` "" `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17312,7 +17312,7 @@ list of string
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17338,7 +17338,7 @@ list of string
 ` "echo" `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17359,7 +17359,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17380,7 +17380,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17398,10 +17398,10 @@ null or string
 
 
 *Default:*
-` "qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source" `
+` "gpxw6pa7fnhi64a13v6v3hnld9mm27dz-source" `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17422,7 +17422,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17440,10 +17440,10 @@ absolute path
 
 
 *Default:*
-` /nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/pins/haskell.nix `
+` <nix-haskell>/pins/haskell.nix `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/pins\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/pins.nix)
+ - [<nix-haskell>/modules/pins\.nix](file://<nix-haskell>/modules/pins.nix)
 
 
 
@@ -17461,10 +17461,10 @@ absolute path
 
 
 *Default:*
-` /nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/deps/nix-thunk `
+` <nix-haskell>/deps/nix-thunk `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/pins\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/pins.nix)
+ - [<nix-haskell>/modules/pins\.nix](file://<nix-haskell>/modules/pins.nix)
 
 
 
@@ -17482,10 +17482,10 @@ absolute path
 
 
 *Default:*
-` /nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/pins/nixpkgs `
+` <nix-haskell>/pins/nixpkgs `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/pins\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/pins.nix)
+ - [<nix-haskell>/modules/pins\.nix](file://<nix-haskell>/modules/pins.nix)
 
 
 
@@ -17503,10 +17503,10 @@ absolute path
 
 
 *Default:*
-` /nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/pins/reflex-platform `
+` <nix-haskell>/pins/reflex-platform `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/pins\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/pins.nix)
+ - [<nix-haskell>/modules/pins\.nix](file://<nix-haskell>/modules/pins.nix)
 
 
 
@@ -17527,7 +17527,7 @@ null or (list of unspecified value)
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17560,7 +17560,7 @@ null or (attribute set of (string or attribute set of string))
 ```
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17576,7 +17576,7 @@ This option has no description\.
 submodule
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17597,7 +17597,7 @@ unspecified value
 ` false `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17618,7 +17618,7 @@ unspecified value
 ` true `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17652,7 +17652,7 @@ ps: with ps; [
 ````
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17673,7 +17673,7 @@ unspecified value
 ` <function> `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17697,7 +17697,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17718,7 +17718,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17739,7 +17739,7 @@ unspecified value
 ` <function> `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17763,7 +17763,7 @@ ps: []
 ```
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17784,7 +17784,7 @@ boolean
 ` false `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17805,7 +17805,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17826,7 +17826,7 @@ null or string
 ` null `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17847,7 +17847,7 @@ list of unspecified value
 ` [ ] `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17868,7 +17868,7 @@ attribute set of unspecified value
 ` { } `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17876,12 +17876,12 @@ attribute set of unspecified value
 
 
 
-This option has no description\.
+Shell hook to run when entering the shell\.
 
 
 
 *Type:*
-string
+strings concatenated with “\\n”
 
 
 
@@ -17889,7 +17889,7 @@ string
 ` "" `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17910,7 +17910,7 @@ attribute set of unspecified value
 ` { } `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17931,7 +17931,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17952,7 +17952,7 @@ boolean
 ` true `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -17991,7 +17991,7 @@ attribute set of (absolute path or (attribute set))
 ```
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -18015,7 +18015,7 @@ attribute set *(read only)*
 ```
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -18036,7 +18036,7 @@ absolute path or package
 ` "./." `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -18066,7 +18066,7 @@ absolute path *(read only)*
 ```
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/common.nix)
+ - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
 
 
 
@@ -18092,7 +18092,7 @@ string
 ```
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/pins\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/pins.nix)
+ - [<nix-haskell>/modules/pins\.nix](file://<nix-haskell>/modules/pins.nix)
 
 
 
@@ -18110,10 +18110,10 @@ absolute path
 
 
 *Default:*
-` "/nix/store/idnx0yx8dlyrjw6vmywimhwxgfcc16mx-source" `
+` "<nix-haskell>" `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/thunks\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/thunks.nix)
+ - [<nix-haskell>/modules/thunks\.nix](file://<nix-haskell>/modules/thunks.nix)
 
 
 
@@ -18131,10 +18131,10 @@ absolute path
 
 
 *Default:*
-` "/nix/store/k7h3v8dwgg8l6r0fhjqqffw1bd7nphf8-source" `
+` "<nix-haskell>" `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/thunks\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/thunks.nix)
+ - [<nix-haskell>/modules/thunks\.nix](file://<nix-haskell>/modules/thunks.nix)
 
 
 
@@ -18152,10 +18152,10 @@ absolute path
 
 
 *Default:*
-` "/nix/store/ws6jqxhhvy2nzjqmp7h8a1546ygrsfk6-source" `
+` "<nix-haskell>" `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/thunks\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/thunks.nix)
+ - [<nix-haskell>/modules/thunks\.nix](file://<nix-haskell>/modules/thunks.nix)
 
 
 
@@ -18173,9 +18173,9 @@ absolute path
 
 
 *Default:*
-` "/nix/store/54l1ygi957zdd4943lpwzdpw2cxy8brr-source" `
+` "<nix-haskell>" `
 
 *Declared by:*
- - [/nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/thunks\.nix](file:///nix/store/qkiarvxzkg7g8fwaz0dijnxlk3kc5cyz-source/modules/thunks.nix)
+ - [<nix-haskell>/modules/thunks\.nix](file://<nix-haskell>/modules/thunks.nix)
 
 

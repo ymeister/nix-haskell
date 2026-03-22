@@ -253,7 +253,7 @@ with lib;
 
     source-repository-packages-driver = mkOption {
       type = types.attrs;
-      default = (import ../libs/cabal.nix { inherit pkgs; }).source-repository-packages (attrValues config.source-repository-packages);
+      default = (import ../libs/cabal.nix { inherit pkgs; }).source-repository-packages config.source-repository-packages;
       defaultText = literalMD ''
       ```
       (import ../libs/cabal.nix { inherit pkgs; }).source-repository-packages config.source-repository-packages;

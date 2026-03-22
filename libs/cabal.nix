@@ -3,14 +3,18 @@
 with pkgs.lib;
 
 let # source-repository-package
-    # :: Path || { src :: Path; condition :: String || Null }
+    # :: String -> (Path || { src :: Path; condition :: String || Null } || { outPath :: Path; ... })
     # -> { inputMap."Path" :: AttrSet; cabalProject :: String }
-    source-repository-package = package-repo:
-      let src = if builtins.isAttrs package-repo && builtins.hasAttr "src" package-repo then package-repo.src else package-repo;
-          condition = if builtins.isAttrs package-repo && builtins.hasAttr "condition" package-repo then package-repo.condition else null;
+    source-repository-package = name: package-repo:
+      let hasOutPath = builtins.isAttrs package-repo && package-repo ? outPath;
+          src = if hasOutPath then package-repo
+                else if builtins.isAttrs package-repo && package-repo ? src then package-repo.src
+                else package-repo;
+          condition = if !hasOutPath && builtins.isAttrs package-repo && package-repo ? condition then package-repo.condition else null;
+          resolved = if hasOutPath then package-repo else { inherit name; outPath = builtins.path { path = src; inherit name; }; };
           input = builtins.unsafeDiscardStringContext src;
       in {
-        inputMap."${input}" = { name = builtins.baseNameOf src; outPath = src; rev = "HEAD"; };
+        inputMap.${input} = resolved // { rev = "HEAD"; };
         cabalProject =
           if condition == null
           then ''
@@ -29,10 +33,9 @@ let # source-repository-package
       };
 
     # source-repository-packages
-    # :: [ Path || { src :: Path; condition :: String || Null } ]
-    # -> { inputMap :: AttrSet; cabalProject :: String }
+    # :: AttrSet (String -> Path || ...) -> { inputMap :: AttrSet; cabalProject :: String }
     source-repository-packages = package-repos:
-      let packages = forEach package-repos source-repository-package;
+      let packages = mapAttrsToList source-repository-package package-repos;
           zipPackages = builtins.zipAttrsWith
             (k: vs:
               if k == "cabalProject" then vs

@@ -24,12 +24,13 @@ let eval = import ./eval.nix { inherit system pkgs; };
       ) [ lhs rhs ];
 
     haskell-nix =
-      let mkProject = x:
+      let asFunc = m: if builtins.isFunction m then m else _: m;
+          mkProject = x:
             let config = (eval x).config;
                 proj = config.haskell-nix.project;
             in proj // {
               inherit config;
-              override = y: mkProject (inputs: recursiveMerge (x inputs) (y inputs));
+              override = y: mkProject (inputs: recursiveMerge (asFunc x inputs) (asFunc y inputs));
             };
       in {
         project = mkProject module;

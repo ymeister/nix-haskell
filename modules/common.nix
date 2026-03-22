@@ -353,6 +353,23 @@ with lib;
 
       tools = {
         cabal = mkDefault "latest";
+        hoogle = mkDefault {
+          version = "5.0.19.0";
+          cabalProjectLocal = ''
+            if impl(ghc == 9.14.*)
+              allow-newer:
+                  *:base
+                , *:template-haskell
+                , *:ghc-experimental
+                , *:ghc-internal
+                , *:containers
+              constraints:
+                  base < 4.23
+                , template-haskell < 2.25
+                , ghc-experimental < 9.1500
+                , ghc-internal < 9.1500
+          '';
+        };
       };
 
     };

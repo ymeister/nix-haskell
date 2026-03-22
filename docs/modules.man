@@ -9439,11 +9439,88 @@ Optional name for better error messages.
 \f[I]Type:\f[R] null or string
 .PP
 \f[I]Default:\f[R]
-\f[CR]\(dqgpxw6pa7fnhi64a13v6v3hnld9mm27dz\-source\(dq\f[R]
+\f[CR]\(dq5sby6vklbavvmvag3208grwvs5k57i5i\-source\(dq\f[R]
 .PP
 \f[I]Declared by:\f[R] \- \c
 .UR file://%3Cnix-haskell%3E/modules/common.nix
 /modules/common.nix
+.UE \c
+.SS optimizations.O2
+Enable \-O2 optimization level.
+.PP
+\f[I]Type:\f[R] boolean
+.PP
+\f[I]Default:\f[R] \f[CR]false\f[R]
+.PP
+\f[I]Declared by:\f[R] \- \c
+.UR file://%3Cnix-haskell%3E/modules/optimizations.nix
+/modules/optimizations.nix
+.UE \c
+.SS optimizations.all
+Enable all optimization flags.
+.PP
+\f[I]Type:\f[R] boolean
+.PP
+\f[I]Default:\f[R] \f[CR]false\f[R]
+.PP
+\f[I]Declared by:\f[R] \- \c
+.UR file://%3Cnix-haskell%3E/modules/optimizations.nix
+/modules/optimizations.nix
+.UE \c
+.SS optimizations.cross\-module\-specialise
+Enable \-fcross\-module\-specialise.
+.PP
+\f[I]Type:\f[R] boolean
+.PP
+\f[I]Default:\f[R] \f[CR]false\f[R]
+.PP
+\f[I]Declared by:\f[R] \- \c
+.UR file://%3Cnix-haskell%3E/modules/optimizations.nix
+/modules/optimizations.nix
+.UE \c
+.SS optimizations.expose\-all\-unfoldings
+Enable \-fexpose\-all\-unfoldings for cross\-module optimization.
+.PP
+\f[I]Type:\f[R] boolean
+.PP
+\f[I]Default:\f[R] \f[CR]false\f[R]
+.PP
+\f[I]Declared by:\f[R] \- \c
+.UR file://%3Cnix-haskell%3E/modules/optimizations.nix
+/modules/optimizations.nix
+.UE \c
+.SS optimizations.late\-specialise
+Enable \-flate\-specialise.
+.PP
+\f[I]Type:\f[R] boolean
+.PP
+\f[I]Default:\f[R] \f[CR]false\f[R]
+.PP
+\f[I]Declared by:\f[R] \- \c
+.UR file://%3Cnix-haskell%3E/modules/optimizations.nix
+/modules/optimizations.nix
+.UE \c
+.SS optimizations.specialise
+Enable \-fspecialise.
+.PP
+\f[I]Type:\f[R] boolean
+.PP
+\f[I]Default:\f[R] \f[CR]false\f[R]
+.PP
+\f[I]Declared by:\f[R] \- \c
+.UR file://%3Cnix-haskell%3E/modules/optimizations.nix
+/modules/optimizations.nix
+.UE \c
+.SS optimizations.specialise\-aggressively
+Enable \-fspecialise\-aggressively.
+.PP
+\f[I]Type:\f[R] boolean
+.PP
+\f[I]Default:\f[R] \f[CR]false\f[R]
+.PP
+\f[I]Declared by:\f[R] \- \c
+.UR file://%3Cnix-haskell%3E/modules/optimizations.nix
+/modules/optimizations.nix
 .UE \c
 .SS overrides
 \f[CR]modules\f[R] overrides.

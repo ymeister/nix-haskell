@@ -9,6 +9,7 @@
     ./cross
 
     ./importing.nix
+    ./optimizations.nix
     ./pins.nix
     ./thunks.nix
   ];

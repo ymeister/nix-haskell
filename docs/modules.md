@@ -17398,10 +17398,157 @@ null or string
 
 
 *Default:*
-` "gpxw6pa7fnhi64a13v6v3hnld9mm27dz-source" `
+` "5sby6vklbavvmvag3208grwvs5k57i5i-source" `
 
 *Declared by:*
  - [<nix-haskell>/modules/common\.nix](file://<nix-haskell>/modules/common.nix)
+
+
+
+## optimizations\.O2
+
+
+
+Enable -O2 optimization level\.
+
+
+
+*Type:*
+boolean
+
+
+
+*Default:*
+` false `
+
+*Declared by:*
+ - [<nix-haskell>/modules/optimizations\.nix](file://<nix-haskell>/modules/optimizations.nix)
+
+
+
+## optimizations\.all
+
+
+
+Enable all optimization flags\.
+
+
+
+*Type:*
+boolean
+
+
+
+*Default:*
+` false `
+
+*Declared by:*
+ - [<nix-haskell>/modules/optimizations\.nix](file://<nix-haskell>/modules/optimizations.nix)
+
+
+
+## optimizations\.cross-module-specialise
+
+
+
+Enable -fcross-module-specialise\.
+
+
+
+*Type:*
+boolean
+
+
+
+*Default:*
+` false `
+
+*Declared by:*
+ - [<nix-haskell>/modules/optimizations\.nix](file://<nix-haskell>/modules/optimizations.nix)
+
+
+
+## optimizations\.expose-all-unfoldings
+
+
+
+Enable -fexpose-all-unfoldings for cross-module optimization\.
+
+
+
+*Type:*
+boolean
+
+
+
+*Default:*
+` false `
+
+*Declared by:*
+ - [<nix-haskell>/modules/optimizations\.nix](file://<nix-haskell>/modules/optimizations.nix)
+
+
+
+## optimizations\.late-specialise
+
+
+
+Enable -flate-specialise\.
+
+
+
+*Type:*
+boolean
+
+
+
+*Default:*
+` false `
+
+*Declared by:*
+ - [<nix-haskell>/modules/optimizations\.nix](file://<nix-haskell>/modules/optimizations.nix)
+
+
+
+## optimizations\.specialise
+
+
+
+Enable -fspecialise\.
+
+
+
+*Type:*
+boolean
+
+
+
+*Default:*
+` false `
+
+*Declared by:*
+ - [<nix-haskell>/modules/optimizations\.nix](file://<nix-haskell>/modules/optimizations.nix)
+
+
+
+## optimizations\.specialise-aggressively
+
+
+
+Enable -fspecialise-aggressively\.
+
+
+
+*Type:*
+boolean
+
+
+
+*Default:*
+` false `
+
+*Declared by:*
+ - [<nix-haskell>/modules/optimizations\.nix](file://<nix-haskell>/modules/optimizations.nix)
 
 
 

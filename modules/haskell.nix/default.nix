@@ -95,7 +95,7 @@ with lib;
                 config =
                   let c = intersectAttrs options config;
                   in c // optionalAttrs (c ? shell) {
-                    shell = builtins.removeAttrs c.shell [ "shellHook" ];
+                    shell = builtins.removeAttrs c.shell [ "shellHook" "withHoogle" ];
                   };
               }
             )
@@ -109,6 +109,7 @@ with lib;
           in p // {
             shell = p.shell.overrideAttrs (old: {
               shellHook = old.shellHook + (config.shell.shellHook or "");
+              withHoogle = old.withHoogle or (config.shell.withHoogle or false);
             });
           };
         defaultText = literalMD ''

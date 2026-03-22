@@ -152,6 +152,12 @@ with lib;
                 options = zipAttrsWith (name: vals: last vals) (map (module: ((import module { projectConfig = config."haskell-nix".options; }) module_args).options) modules);
             in {
               options = recursiveUpdate options {
+                # Override types.str → types.lines so multiple modules can merge shellHook.
+                shellHook = mkOption {
+                  type = types.lines;
+                  default = options.shellHook.default or "";
+                  description = options.shellHook.description or "Shell hook to run when entering the shell.";
+                };
                 crossPlatforms = (options.crossPlatforms or {}) // {
                   defaultText = literalMD ''
                     ```

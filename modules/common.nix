@@ -31,6 +31,38 @@ with lib;
       defaultText = "ghc914";
     };
 
+    cabalProject = mkOption {
+      type = types.nullOr types.lines;
+      default = null;
+      description = ''
+        Content of the `cabal.project` file. Passed through to haskell.nix.
+      '';
+    };
+
+    cabalProjectLocal = mkOption {
+      type = types.nullOr types.lines;
+      default = null;
+      description = ''
+        Content of the `cabal.project.local` file. Passed through to haskell.nix.
+      '';
+    };
+
+    cabalProjectFreeze = mkOption {
+      type = types.nullOr types.lines;
+      default = null;
+      description = ''
+        Content of the `cabal.project.freeze` file. Passed through to haskell.nix.
+      '';
+    };
+
+    cabalProjectFileName = mkOption {
+      type = types.str;
+      default = "cabal.project";
+      description = ''
+        Name of the cabal project file. Passed through to haskell.nix.
+      '';
+    };
+
     extraCabalProject = mkOption {
       type = types.listOf types.lines;
       default = [];

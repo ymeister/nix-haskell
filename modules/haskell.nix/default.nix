@@ -93,7 +93,7 @@ with lib;
                   '';
                 };
                 config =
-                  let c = intersectAttrs options config;
+                  let c = filterAttrs (n: v: v != null) (intersectAttrs options config);
                   in c // optionalAttrs (c ? shell) {
                     shell = builtins.removeAttrs c.shell [ "shellHook" "withHoogle" ];
                   };

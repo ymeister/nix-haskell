@@ -42,6 +42,7 @@ in {
   # Platform-specific cross-compilation support modules
   imports = [
     ./ghcjs  # JavaScript/GHCJS target support
+    ./wasm   # WebAssembly/WASM target support
   ];
 
   # Cross-Compilation Shell Wrapper Scripts

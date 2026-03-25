@@ -1,6 +1,9 @@
 { system ? builtins.currentSystem
-, pkgs ? import ./pins/nixpkgs { inherit system; }
 , inputs ? {}
+, pkgs ?
+    if inputs ? nixpkgs
+    then import inputs.nixpkgs { inherit system; }
+    else import ./pins/nixpkgs { inherit system; }
 }:
 
 module:

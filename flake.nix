@@ -1,5 +1,6 @@
 {
   inputs = {
+    flake-compat.url = "github:NixOS/flake-compat";
     nixpkgs.url = "github:NixOS/nixpkgs/078d69f03934859a181e81ba987c2bb033eebfc5";
     haskell-nix.url = "github:ymeister/haskell.nix/9fa7c11202e16c8cd2743deed4d811da1cfb2e51";
     reflex-platform = {

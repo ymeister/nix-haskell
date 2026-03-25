@@ -1,12 +1,13 @@
 { system ? builtins.currentSystem
 , pkgs ? import ./pins/nixpkgs { inherit system; }
+, inputs ? {}
 }:
 
 with pkgs.lib;
 
 module:
 
-let eval = import ./eval.nix { inherit system pkgs; };
+let eval = import ./eval.nix { inherit system pkgs inputs; };
 
     evaluated = eval module;
     config = evaluated.config;

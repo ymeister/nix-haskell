@@ -1,28 +1,30 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/078d69f03934859a181e81ba987c2bb033eebfc5";
-    "haskell.nix".url = "github:ymeister/haskell.nix/9fa7c11202e16c8cd2743deed4d811da1cfb2e51";
+    haskell-nix.url = "github:ymeister/haskell.nix/9fa7c11202e16c8cd2743deed4d811da1cfb2e51";
     reflex-platform = {
       url = "github:reflex-frp/reflex-platform/4482ecb04c5939ac77c26d769d149dee12051a13";
       flake = false;
     };
   };
 
-  outputs = { self, nixpkgs, ... }:
+  outputs = inputs@{ self, nixpkgs, ... }:
     let eachSystem = nixpkgs.lib.genAttrs
           [ "x86_64-linux"
             "aarch64-linux"
           ];
     in {
       lib = eachSystem (system:
-        let nix-haskell = import ./default.nix { inherit system; };
+        let pkgs = import nixpkgs { inherit system; };
+            nix-haskell = import ./default.nix { inherit system pkgs inputs; };
         in {
           inherit nix-haskell;
         } // nixpkgs.lib.mapAttrs (name: _: module: (nix-haskell module).${name}) (nix-haskell {})
       );
 
       packages = eachSystem (system:
-        let nix-haskell = import ./default.nix { inherit system; };
+        let pkgs = import nixpkgs { inherit system; };
+            nix-haskell = import ./default.nix { inherit system pkgs inputs; };
             project = nix-haskell { src = ./.; };
         in {
           manual-view = project.manual.view;

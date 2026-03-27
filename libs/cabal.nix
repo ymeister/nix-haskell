@@ -54,32 +54,28 @@ let # source-repository-package
           else "";
       };
 
-    # import-cabal-project
+    # inline-cabal-project
     # :: Path (base directory)
     # -> Path (project file)
     # -> String
-    import-cabal-project = dir: file:
+    inline-cabal-project = dir: file:
       let path = dir + "/${file}";
-          content = ''
-            -- ${path}
-            ${if hasPrefix "http://" file || hasPrefix "https://" file
-              then builtins.fetchurl file
-              else builtins.readFile path
-            }
-          '';
+          content =
+            if hasPrefix "http://" file || hasPrefix "https://" file
+            then builtins.fetchurl file
+            else builtins.readFile path;
           lines = splitString "\n" content;
 
           parseLine = line:
             let splitLine = builtins.match "([ ]*)import: (.*)" line;
-                prefix = builtins.elemAt splitLine 0;
                 subproject = builtins.elemAt splitLine 1;
             in if splitLine != null
-              then concatStringsSep "import: " [ prefix (import-cabal-project dir subproject) ]
+              then inline-cabal-project dir subproject
               else line;
           parsed-lines = forEach lines parseLine;
 
       in concatStringsSep "\n" parsed-lines;
 
 in {
-  inherit source-repository-package source-repository-packages import-cabal-project;
+  inherit source-repository-package source-repository-packages inline-cabal-project;
 }

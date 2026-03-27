@@ -25,8 +25,7 @@ pkgs.lib.evalModules {
       config.pins = lib.mapAttrs (_: lib.mkDefault) (builtins.intersectAttrs options.pins inputs);
     })
 
-    module
-  ];
+  ] ++ pkgs.lib.toList module;
 
   specialArgs = {
     nix-haskell-modules = ./modules;

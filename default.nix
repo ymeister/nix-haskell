@@ -29,15 +29,32 @@ let eval = import ./eval.nix { inherit system pkgs inputs; };
 
     haskell-nix =
       let asFunc = m: if builtins.isFunction m then m else _: m;
-          mkProject = x:
-            let config = (eval x).config;
-                proj = config.haskell-nix.project;
-            in proj // {
-              inherit config;
-              override = y: mkProject (inputs: recursiveMerge (asFunc x inputs) (asFunc y inputs));
-            };
-      in {
+          mkProject = x: {
+            config = (eval x).config;
+            project = (eval x).config.haskell-nix.project;
+            override = y: mkProject (inputs: recursiveMerge (asFunc x inputs) (asFunc y inputs));
+          };
+      in rec {
         project = mkProject module;
+
+        ghcWithPackages = m: packages:
+          let syntheticSrc = pkgs.writeTextFile {
+                name = "ghc-with-packages-src";
+                destination = "/ghc-with-packages.cabal";
+                text = ''
+                  cabal-version: 2.4
+                  name: ghc-with-packages
+                  version: 0
+                '';
+              };
+              proj = (mkProject {
+                name = "ghc-with-packages";
+                src = syntheticSrc;
+                cabalProject = ''
+                  extra-packages: ${builtins.concatStringsSep ", " packages}
+                '';
+              }).override m;
+          in proj.project.ghcWithPackages (ps: map (n: ps.${n}) packages);
       };
 
 
@@ -46,9 +63,5 @@ in {
 
   nixpkgs = config.importing.nixpkgs;
 
-  project = {
-    haskell-nix = haskell-nix.project;
-  };
-
   manual = docs;
-}
+} // mapAttrs (_: value: { haskell-nix = value; }) haskell-nix

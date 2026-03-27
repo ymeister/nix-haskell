@@ -49,7 +49,7 @@ let eval = import ./eval.nix { inherit system pkgs inputs; };
               proj = mkProject ([{
                 name = "ghc-with-packages";
                 src = syntheticSrc;
-                cabalProject = ''
+                cabalProjectLocal = ''
                   extra-packages: ${builtins.concatStringsSep ", " packages}
                 '';
               }] ++ ms);

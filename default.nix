@@ -41,6 +41,9 @@ let eval = import ./eval.nix { inherit system pkgs inputs; };
                   cabal-version: 2.4
                   name: ghc-with-packages
                   version: 0
+
+                  library
+                    build-depends: ${builtins.concatStringsSep ", " packages}
                 '';
               };
               proj = mkProject ([{

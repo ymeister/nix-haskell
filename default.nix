@@ -53,7 +53,10 @@ let eval = import ./eval.nix { inherit system pkgs inputs; };
                   extra-packages: ${builtins.concatStringsSep ", " packages}
                 '';
               }] ++ ms);
-          in proj.ghcWithPackages (ps: map (n: ps.${n}) packages);
+              installPlan = proj.pkg-set.config.plan-json.install-plan;
+              preExistingPkgs = filter (p: p.type == "pre-existing") installPlan;
+              preExistingPkgsNames = map (p: p.pkg-name) preExistingPkgs;
+          in proj.ghcWithPackages (ps: map (n: ps.${n}) (filter (n: !(elem n preExistingPkgsNames)) packages));
       };
 
 
